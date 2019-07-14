@@ -97,11 +97,10 @@
 		587A505722DB14600010781F /* Cookivan */ = {
 			isa = PBXGroup;
 			children = (
+				587A508622DB148E0010781F /* Model */,
+				587A508722DB14A30010781F /* View */,
+				587A508822DB14AD0010781F /* Controller */,
 				587A505822DB14610010781F /* AppDelegate.swift */,
-				587A505A22DB14610010781F /* ViewController.swift */,
-				587A505C22DB14610010781F /* Main.storyboard */,
-				587A505F22DB14620010781F /* Assets.xcassets */,
-				587A506122DB14620010781F /* LaunchScreen.storyboard */,
 				587A506422DB14620010781F /* Info.plist */,
 			);
 			path = Cookivan;
@@ -123,6 +122,31 @@
 				587A507A22DB14620010781F /* Info.plist */,
 			);
 			path = CookivanUITests;
+			sourceTree = "<group>";
+		};
+		587A508622DB148E0010781F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		587A508722DB14A30010781F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				587A505F22DB14620010781F /* Assets.xcassets */,
+				587A505C22DB14610010781F /* Main.storyboard */,
+				587A506122DB14620010781F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		587A508822DB14AD0010781F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				587A505A22DB14610010781F /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
