@@ -10,13 +10,17 @@
 		32FD59215F7C391786E279B6 /* Pods_Cookivan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FA32DC4E11F46B33468EB9 /* Pods_Cookivan.framework */; };
 		38094A5B0415B1972BA55390 /* Pods_CookivanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1616E46CDBC02C295E469C7 /* Pods_CookivanUITests.framework */; };
 		587A505922DB14610010781F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587A505822DB14610010781F /* AppDelegate.swift */; };
-		587A505B22DB14610010781F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587A505A22DB14610010781F /* ViewController.swift */; };
+		587A505B22DB14610010781F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587A505A22DB14610010781F /* LoginVC.swift */; };
 		587A505E22DB14610010781F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 587A505C22DB14610010781F /* Main.storyboard */; };
 		587A506022DB14620010781F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587A505F22DB14620010781F /* Assets.xcassets */; };
 		587A506322DB14620010781F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 587A506122DB14620010781F /* LaunchScreen.storyboard */; };
 		587A506E22DB14620010781F /* CookivanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587A506D22DB14620010781F /* CookivanTests.swift */; };
 		587A507922DB14620010781F /* CookivanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587A507822DB14620010781F /* CookivanUITests.swift */; };
 		587A508A22DB1F410010781F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 587A508922DB1F410010781F /* GoogleService-Info.plist */; };
+		58CF756522DC79A600729617 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF756422DC79A600729617 /* RegistrationVC.swift */; };
+		58CF756722DC8CC000729617 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58CF756622DC8CC000729617 /* OpenSans-Regular.ttf */; };
+		58CF756C22DCA19300729617 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF756B22DCA19300729617 /* RoundedViews.swift */; };
+		58CF757122DCC6F700729617 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF757022DCC6F700729617 /* Constants.swift */; };
 		BD42FF25B890F5E2C5D9AA2A /* Pods_CookivanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623D1646618774E521C2E0D8 /* Pods_CookivanTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +46,7 @@
 		4AF2B2CAD49453F6D5568EF2 /* Pods-Cookivan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cookivan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cookivan/Pods-Cookivan.release.xcconfig"; sourceTree = "<group>"; };
 		587A505522DB14600010781F /* Cookivan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookivan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		587A505822DB14610010781F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		587A505A22DB14610010781F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		587A505A22DB14610010781F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		587A505D22DB14610010781F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		587A505F22DB14620010781F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		587A506222DB14620010781F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +58,11 @@
 		587A507822DB14620010781F /* CookivanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookivanUITests.swift; sourceTree = "<group>"; };
 		587A507A22DB14620010781F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		587A508922DB1F410010781F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		58CF756422DC79A600729617 /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
+		58CF756622DC8CC000729617 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		58CF756822DC8CD000729617 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		58CF756B22DCA19300729617 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
+		58CF757022DCC6F700729617 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5ADEEE16A48CE6636160E159 /* Pods-CookivanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookivanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookivanTests/Pods-CookivanTests.release.xcconfig"; sourceTree = "<group>"; };
 		623D1646618774E521C2E0D8 /* Pods_CookivanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookivanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A904FF7F43AE016EF6B5E3DC /* Pods-Cookivan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cookivan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cookivan/Pods-Cookivan.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +128,9 @@
 				587A508622DB148E0010781F /* Model */,
 				587A508722DB14A30010781F /* View */,
 				587A508822DB14AD0010781F /* Controller */,
+				58CF756D22DCB55A00729617 /* Storyboards */,
+				58CF756F22DCC6D600729617 /* Utils */,
+				58CF756E22DCC6A600729617 /* Fonts */,
 				587A505822DB14610010781F /* AppDelegate.swift */,
 				587A506422DB14620010781F /* Info.plist */,
 				587A508922DB1F410010781F /* GoogleService-Info.plist */,
@@ -155,8 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				587A505F22DB14620010781F /* Assets.xcassets */,
-				587A505C22DB14610010781F /* Main.storyboard */,
-				587A506122DB14620010781F /* LaunchScreen.storyboard */,
+				58CF756B22DCA19300729617 /* RoundedViews.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,9 +175,36 @@
 		587A508822DB14AD0010781F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				587A505A22DB14610010781F /* ViewController.swift */,
+				587A505A22DB14610010781F /* LoginVC.swift */,
+				58CF756422DC79A600729617 /* RegistrationVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		58CF756D22DCB55A00729617 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				587A505C22DB14610010781F /* Main.storyboard */,
+				587A506122DB14620010781F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		58CF756E22DCC6A600729617 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				58CF756822DC8CD000729617 /* OpenSans-SemiBold.ttf */,
+				58CF756622DC8CC000729617 /* OpenSans-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		58CF756F22DCC6D600729617 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				58CF757022DCC6F700729617 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		940A76CA91B74B2AF9557703 /* Frameworks */ = {
@@ -300,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58CF756722DC8CC000729617 /* OpenSans-Regular.ttf in Resources */,
 				587A506322DB14620010781F /* LaunchScreen.storyboard in Resources */,
 				587A506022DB14620010781F /* Assets.xcassets in Resources */,
 				587A508A22DB1F410010781F /* GoogleService-Info.plist in Resources */,
@@ -368,11 +407,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Cookivan/Pods-Cookivan-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,7 +446,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				587A505B22DB14610010781F /* ViewController.swift in Sources */,
+				58CF756C22DCA19300729617 /* RoundedViews.swift in Sources */,
+				587A505B22DB14610010781F /* LoginVC.swift in Sources */,
+				58CF757122DCC6F700729617 /* Constants.swift in Sources */,
+				58CF756522DC79A600729617 /* RegistrationVC.swift in Sources */,
 				587A505922DB14610010781F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,10 +630,7 @@
 				DEVELOPMENT_TEAM = QKHU8FT2PB;
 				INFOPLIST_FILE = Cookivan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelinafriz.Cookivan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -606,10 +647,7 @@
 				DEVELOPMENT_TEAM = QKHU8FT2PB;
 				INFOPLIST_FILE = Cookivan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelinafriz.Cookivan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -626,11 +664,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QKHU8FT2PB;
 				INFOPLIST_FILE = CookivanTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelinafriz.CookivanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -648,11 +682,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QKHU8FT2PB;
 				INFOPLIST_FILE = CookivanTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelinafriz.CookivanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -669,11 +699,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QKHU8FT2PB;
 				INFOPLIST_FILE = CookivanUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelinafriz.CookivanUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -690,11 +716,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QKHU8FT2PB;
 				INFOPLIST_FILE = CookivanUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelinafriz.CookivanUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

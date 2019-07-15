@@ -7,6 +7,7 @@ target 'Cookivan' do
 
   # Pods for Cookivan
   pod 'Firebase/Core'
+  pod 'IQKeyboardManagerSwift'
 
   target 'CookivanTests' do
     inherit! :search_paths
