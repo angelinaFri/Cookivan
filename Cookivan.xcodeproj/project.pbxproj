@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		32FD59215F7C391786E279B6 /* Pods_Cookivan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FA32DC4E11F46B33468EB9 /* Pods_Cookivan.framework */; };
 		38094A5B0415B1972BA55390 /* Pods_CookivanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1616E46CDBC02C295E469C7 /* Pods_CookivanUITests.framework */; };
+		5817625122DDC13400425AD9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817625022DDC13400425AD9 /* User.swift */; };
+		5817625322DDC62900425AD9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817625222DDC62900425AD9 /* Extensions.swift */; };
 		587A505922DB14610010781F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587A505822DB14610010781F /* AppDelegate.swift */; };
 		587A505B22DB14610010781F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587A505A22DB14610010781F /* LoginVC.swift */; };
 		587A505E22DB14610010781F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 587A505C22DB14610010781F /* Main.storyboard */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		3DF7ACEF5E4F4BABEC23C5DE /* Pods-CookivanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookivanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookivanUITests/Pods-CookivanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4AF2B2CAD49453F6D5568EF2 /* Pods-Cookivan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cookivan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cookivan/Pods-Cookivan.release.xcconfig"; sourceTree = "<group>"; };
+		5817625022DDC13400425AD9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5817625222DDC62900425AD9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		587A505522DB14600010781F /* Cookivan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookivan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		587A505822DB14610010781F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		587A505A22DB14610010781F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 		587A508622DB148E0010781F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5817625022DDC13400425AD9 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				58CF757022DCC6F700729617 /* Constants.swift */,
+				5817625222DDC62900425AD9 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -448,9 +454,11 @@
 			files = (
 				58CF756C22DCA19300729617 /* RoundedViews.swift in Sources */,
 				587A505B22DB14610010781F /* LoginVC.swift in Sources */,
+				5817625122DDC13400425AD9 /* User.swift in Sources */,
 				58CF757122DCC6F700729617 /* Constants.swift in Sources */,
 				58CF756522DC79A600729617 /* RegistrationVC.swift in Sources */,
 				587A505922DB14610010781F /* AppDelegate.swift in Sources */,
+				5817625322DDC62900425AD9 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,7 +638,10 @@
 				DEVELOPMENT_TEAM = QKHU8FT2PB;
 				INFOPLIST_FILE = Cookivan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelinafriz.Cookivan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -647,7 +658,10 @@
 				DEVELOPMENT_TEAM = QKHU8FT2PB;
 				INFOPLIST_FILE = Cookivan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelinafriz.Cookivan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -664,7 +678,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QKHU8FT2PB;
 				INFOPLIST_FILE = CookivanTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelinafriz.CookivanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -682,7 +700,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QKHU8FT2PB;
 				INFOPLIST_FILE = CookivanTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelinafriz.CookivanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -699,7 +721,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QKHU8FT2PB;
 				INFOPLIST_FILE = CookivanUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelinafriz.CookivanUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -716,7 +742,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QKHU8FT2PB;
 				INFOPLIST_FILE = CookivanUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.angelinafriz.CookivanUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
