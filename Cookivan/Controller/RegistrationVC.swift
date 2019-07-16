@@ -71,13 +71,51 @@ class RegistrationVC: UIViewController {
                 simpleAlert(title: "Упс...Ошибка", msg: "Пожалуйста, заполните все поля.")
                 return
         }
+
+
         // MARK:- Password matching validation
         guard let confirmPass = confirmPassTxt.text, confirmPass == password else {
             simpleAlert(title: "Упс...Ошибка", msg: "Пароли не совпадают.")
             return
         }
         activityIndicator.startAnimating()
+
+        Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+            if let error = error {
+                debugPrint(error)
+                Auth.auth().handleFireAuthError(error: error, vc: self)
+                return
+            }
+        }
+
+        // MARK:- Manually creating user and link it with anonymous one /that was logged in already
+        guard let authUser = Auth.auth().currentUser else { return }
+        let credential = EmailAuthProvider.credential(withEmail: email, password: password)
+        authUser.link(with: credential) { (result, error) in
+            if let error = error {
+                debugPrint(error)
+                Auth.auth().handleFireAuthError(error: error, vc: self)
+                return
+            }
+            guard let firestoreUser = result?.user else { return }
+            let applicationUser = User.init(id: firestoreUser.uid, email: email, username: username)
+            self.createFirestoreUser(user: applicationUser)
+        }
     }
 
+    func createFirestoreUser(user: User) {
+        let newUserRef = Firestore.firestore().collection("users").document(user.id)
+        let data = User.modelToData(user: user)
+        newUserRef.setData(data) { (error) in
+            if let error = error {
+                Auth.auth().handleFireAuthError(error: error, vc: self)
+                debugPrint("Unable to upload new user document \(error.localizedDescription)")
+            } else {
+                self.dismiss(animated: true, completion: nil)
+            }
+            self.activityIndicator.stopAnimating()
+        }
+
+    }
 
 }

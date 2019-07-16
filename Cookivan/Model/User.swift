@@ -27,6 +27,14 @@ struct User {
         email = data["email"] as? String ?? ""
         username = data["username"] as? String ?? ""
      }
+
+    static func modelToData(user: User) -> [String: Any] {
+        let data: [String: Any] = [
+            "id": user.id,
+            "email": user.email,
+            "username": user.username ]
+        return data
+    }
 }
 
 
