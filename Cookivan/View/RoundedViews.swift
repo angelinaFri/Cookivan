@@ -36,3 +36,21 @@ class RoundedTextField: UITextField {
     }
 }
 
+class GreyBorderRoundedTextField: RoundedTextField {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        layer.borderColor = AppColors.GreyTxtFieldBorder.cgColor
+    }
+}
+
+class RoundedShadowView: UIView {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        layer.cornerRadius = 20
+        layer.shadowColor = AppColors.GreyShadow.cgColor
+        layer.shadowOpacity = 0.4
+        layer.shadowOffset = CGSize.zero
+        layer.shadowRadius = 3
+    }
+}
+
