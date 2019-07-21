@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseFirestore
+import FirebaseAuth
 
 class RegistrationVC: UIViewController {
 
@@ -19,6 +20,7 @@ class RegistrationVC: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var passCheckImg: UIImageView!
     @IBOutlet weak var confirmPassCheckImg: UIImageView!
+    private var storage = FireBaseStorage()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +35,9 @@ class RegistrationVC: UIViewController {
     }
 
     @objc func textFieldDidChange(_ textField: RoundedTextField) {
-        guard let passTxt = passwordTxt.text else { return }
+        guard let passTxt = passwordTxt.text else {
+            return
+        }
         // when we have started typing in the confirm pass field.
         if textField == confirmPassTxt {
             passCheckImg.isHidden = false
@@ -67,56 +71,40 @@ class RegistrationVC: UIViewController {
     @IBAction func registerClicked(_ sender: Any) {
         // MARK:- All fields are filled out validation
         guard let email = emailTxt.text, email.isNotEmpty,
-            let username = usernameTxt.text, username.isNotEmpty,
-            let password = passwordTxt.text, password.isNotEmpty else {
-                simpleAlert(title: "Упс...Ошибка", msg: "Пожалуйста, заполните все поля.")
-                return
+              let username = usernameTxt.text, username.isNotEmpty,
+              let password = passwordTxt.text, password.isNotEmpty else {
+            simpleAlert(title: "Пожалуйста, заполните все поля.", msg: "")
+            return
         }
-
 
         // MARK:- Password matching validation
         guard let confirmPass = confirmPassTxt.text, confirmPass == password else {
-            simpleAlert(title: "Упс...Ошибка", msg: "Пароли не совпадают.")
+            simpleAlert(title: "Пароли не совпадают", msg: "")
             return
         }
         activityIndicator.startAnimating()
-
-        Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
-            if let error = error {
-                debugPrint(error)
-                Auth.auth().handleFireAuthError(error: error, vc: self)
-                return
-            }
-        }
-
         // MARK:- Manually creating user and link it with anonymous one /that was logged in already
-        guard let authUser = Auth.auth().currentUser else { return }
-        let credential = EmailAuthProvider.credential(withEmail: email, password: password)
-        authUser.link(with: credential) { (result, error) in
+        self.storage.createOrLinkUser(username: username, email: email, password: password) { [weak self] error in
+            self?.activityIndicator.stopAnimating()
             if let error = error {
                 debugPrint(error)
-                Auth.auth().handleFireAuthError(error: error, vc: self)
-                return
+                self?.handleFireAuthError(error: error)
             }
-            guard let firestoreUser = result?.user else { return }
-            let applicationUser = User.init(id: firestoreUser.uid, email: email, username: username)
-            self.createFirestoreUser(user: applicationUser)
+//             TODO: implement some logic
         }
     }
 
-    func createFirestoreUser(user: User) {
-        let newUserRef = Firestore.firestore().collection("users").document(user.id)
-        let data = User.modelToData(user: user)
-        newUserRef.setData(data) { (error) in
-            if let error = error {
-                Auth.auth().handleFireAuthError(error: error, vc: self)
-                debugPrint("Unable to upload new user document \(error.localizedDescription)")
-            } else {
-                self.dismiss(animated: true, completion: nil)
-            }
-            self.activityIndicator.stopAnimating()
-        }
-
-    }
-
+//    func createFirestoreUser(user: User) {
+//        let newUserRef = Firestore.firestore().collection("users").document(user.id)
+//        let data = User.modelToData(user: user)
+//        newUserRef.setData(data) { (error) in
+//            if let error = error {
+//                Auth.auth().handleFireAuthError(error: error, vc: self)
+//                debugPrint("Unable to upload new user document \(error.localizedDescription)")
+//            } else {
+//                self.dismiss(animated: true, completion: nil)
+//            }
+//            self.activityIndicator.stopAnimating()
+//        }
+//    }
 }

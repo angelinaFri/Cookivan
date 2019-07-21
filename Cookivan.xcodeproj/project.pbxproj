@@ -26,6 +26,9 @@
 		58CF756C22DCA19300729617 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF756B22DCA19300729617 /* RoundedViews.swift */; };
 		58CF757122DCC6F700729617 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF757022DCC6F700729617 /* Constants.swift */; };
 		BD42FF25B890F5E2C5D9AA2A /* Pods_CookivanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623D1646618774E521C2E0D8 /* Pods_CookivanTests.framework */; };
+		CCC4918502BD659964556EC6 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC49D7180B0BF1DE7378118 /* Storage.swift */; };
+		CCC49408EB9311A96BCBE178 /* FireBaseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC49118A6CA6AE2DDC5DA81 /* FireBaseStorage.swift */; };
+		CCC49520C0E4B0866377446A /* UIViewController+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC492C46AC2B2BD120E17B5 /* UIViewController+Auth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,9 @@
 		A904FF7F43AE016EF6B5E3DC /* Pods-Cookivan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cookivan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cookivan/Pods-Cookivan.debug.xcconfig"; sourceTree = "<group>"; };
 		A9FA32DC4E11F46B33468EB9 /* Pods_Cookivan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cookivan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2B47C286B3287C3D9E9C13 /* Pods-CookivanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookivanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookivanUITests/Pods-CookivanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CCC49118A6CA6AE2DDC5DA81 /* FireBaseStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBaseStorage.swift; sourceTree = "<group>"; };
+		CCC492C46AC2B2BD120E17B5 /* UIViewController+Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Auth.swift"; sourceTree = "<group>"; };
+		CCC49D7180B0BF1DE7378118 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		F1383F012B0EE7D24F5650A9 /* Pods-CookivanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookivanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookivanTests/Pods-CookivanTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F1616E46CDBC02C295E469C7 /* Pods_CookivanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookivanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -151,6 +157,8 @@
 				587A505822DB14610010781F /* AppDelegate.swift */,
 				587A506422DB14620010781F /* Info.plist */,
 				587A508922DB1F410010781F /* GoogleService-Info.plist */,
+				CCC49C4A01F84726C3EE8448 /* Storage */,
+				CCC4971A4E202576D77605D8 /* Helper */,
 			);
 			path = Cookivan;
 			sourceTree = "<group>";
@@ -235,6 +243,23 @@
 				F1616E46CDBC02C295E469C7 /* Pods_CookivanUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCC4971A4E202576D77605D8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CCC492C46AC2B2BD120E17B5 /* UIViewController+Auth.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CCC49C4A01F84726C3EE8448 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				CCC49D7180B0BF1DE7378118 /* Storage.swift */,
+				CCC49118A6CA6AE2DDC5DA81 /* FireBaseStorage.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		E0DFA8F1097437EEB51978A2 /* Pods */ = {
@@ -487,6 +512,9 @@
 				587A505922DB14610010781F /* AppDelegate.swift in Sources */,
 				5856371322E081260034EBF1 /* ForgotPasswordVC.swift in Sources */,
 				5817625322DDC62900425AD9 /* Extensions.swift in Sources */,
+				CCC4918502BD659964556EC6 /* Storage.swift in Sources */,
+				CCC49408EB9311A96BCBE178 /* FireBaseStorage.swift in Sources */,
+				CCC49520C0E4B0866377446A /* UIViewController+Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

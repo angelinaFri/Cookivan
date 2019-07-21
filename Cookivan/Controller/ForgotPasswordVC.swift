@@ -27,17 +27,16 @@ class ForgotPasswordVC: UIViewController {
 
     @IBAction func resetPassClicked(_ sender: Any) {
         guard let email = emailTxt.text, email.isNotEmpty else {
-            simpleAlert(title: "Ошибка", msg: "Пожалуйста, введите Email")
+            simpleAlert(title: "Пожалуйста, введите Email", msg: "")
             return
         }
         Auth.auth().sendPasswordReset(withEmail: email) { (error) in
             if let error = error {
                 debugPrint(error)
-                Auth.auth().handleFireAuthError(error: error, vc: self)
+                self.handleFireAuthError(error: error)
                 return
             }
             self.dismiss(animated: true, completion: nil)
         }
     }
-
 }

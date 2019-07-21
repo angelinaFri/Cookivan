@@ -21,19 +21,20 @@ struct User {
         self.email = email
         self.username = username
     }
+
     // TODO:- Recheck when I need this initializer
     init(data: [String: Any]) {
         id = data["id"] as? String ?? ""
         email = data["email"] as? String ?? ""
         username = data["username"] as? String ?? ""
-     }
+    }
 
-    static func modelToData(user: User) -> [String: Any] {
-        let data: [String: Any] = [
-            "id": user.id,
-            "email": user.email,
-            "username": user.username ]
-        return data
+    func toData() -> [String: Any] {
+        return [
+            "id": self.id,
+            "email": self.email,
+            "username": self.username
+        ]
     }
 }
 
