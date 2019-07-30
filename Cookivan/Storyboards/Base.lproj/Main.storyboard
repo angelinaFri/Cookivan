@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FlA-Xp-isr">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="Cookivan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBgImg" translatesAutoresizingMaskIntoConstraints="NO" id="1Rt-Eh-V5R">
+                                <rect key="frame" x="0.0" y="84" width="414" height="812"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BWn-AR-SGd">
+                                <rect key="frame" x="52" y="251" width="310" height="106"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cqv-L8-hho" customClass="RoundedTextField" customModule="Cookivan" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="750" constant="48" id="dgH-ul-cRf"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.80392156862745101" green="0.81176470588235294" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans SemiBold" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" red="0.80392156859999997" green="0.81176470590000005" blue="0.82352941180000006" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sw6-Ai-kgI" customClass="RoundedTextField" customModule="Cookivan" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="58" width="310" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="750" constant="48" id="egm-Te-U0u"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.80392156862745101" green="0.81176470588235294" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans SemiBold" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" red="0.80392156859999997" green="0.81176470590000005" blue="0.82352941180000006" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="NMX-up-zox">
+                                <rect key="frame" x="31" y="106" width="331" height="119"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DFu-1m-dXY">
+                                <rect key="frame" x="52" y="474" width="310" height="164"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsB-Gm-FiJ" customClass="RoundedButton" customModule="Cookivan" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="48"/>
+                                        <color key="backgroundColor" red="0.32549019607843138" green="0.65098039215686276" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="750" constant="48" id="EBL-Q2-cvw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans SemiBold" pointSize="13"/>
+                                        <state key="normal" title="ВОЙТИ">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rSa-qg-Rt2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhF-H9-fSh" customClass="RoundedButton" customModule="Cookivan" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="58" width="310" height="48"/>
+                                        <color key="backgroundColor" red="0.95294117647058818" green="0.35686274509803922" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="750" constant="48" id="Ifv-oL-cye"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans SemiBold" pointSize="13"/>
+                                        <state key="normal" title="РЕГИСТРАЦИЯ">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="OuT-Hf-msQ" kind="show" id="Xes-6B-9I2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUL-Wb-AsR" customClass="ClearBGButton" customModule="Cookivan" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="116" width="310" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="750" constant="48" id="Yqs-Uz-g7g"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans SemiBold" pointSize="13"/>
+                                        <state key="normal" title="ПРОДОЛЖИТЬ КАК ГОСТЬ">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="guestClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lzI-Ln-uGK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bhF-H9-fSh" firstAttribute="leading" secondItem="DFu-1m-dXY" secondAttribute="leading" id="5x9-Ig-eP0"/>
+                                    <constraint firstAttribute="trailing" secondItem="CsB-Gm-FiJ" secondAttribute="trailing" id="KB6-Q0-cpS"/>
+                                    <constraint firstAttribute="trailing" secondItem="zUL-Wb-AsR" secondAttribute="trailing" id="TJa-Wq-ACv"/>
+                                    <constraint firstItem="CsB-Gm-FiJ" firstAttribute="leading" secondItem="DFu-1m-dXY" secondAttribute="leading" id="dE5-R1-yug"/>
+                                    <constraint firstItem="zUL-Wb-AsR" firstAttribute="leading" secondItem="DFu-1m-dXY" secondAttribute="leading" id="iZw-J0-Dof"/>
+                                    <constraint firstAttribute="trailing" secondItem="bhF-H9-fSh" secondAttribute="trailing" id="kcX-aj-rE9"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Зарегистрируйтесь, чтобы иметь доступ ко всем рецептам и функциям!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOG-CB-VCz">
+                                <rect key="frame" x="66" y="785.33333333333337" width="282" height="35.666666666666629"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLm-DX-gkW">
+                                <rect key="frame" x="163" y="372" width="88" height="27"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="11"/>
+                                <state key="normal" title="Забыли пароль?">
+                                    <color key="titleColor" red="0.80392156862745101" green="0.81176470588235294" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="forgotPassClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="btL-ip-2gq"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="c2b-Cv-EQJ">
+                                <rect key="frame" x="189" y="689" width="37" height="37"/>
+                                <color key="color" red="0.95294117649999999" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Rt-Eh-V5R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="APj-GB-pep"/>
+                            <constraint firstItem="DFu-1m-dXY" firstAttribute="top" secondItem="dLm-DX-gkW" secondAttribute="bottom" constant="75" id="Ddt-go-XPy"/>
+                            <constraint firstItem="BWn-AR-SGd" firstAttribute="top" secondItem="NMX-up-zox" secondAttribute="bottom" constant="26" id="Exe-8J-DLF"/>
+                            <constraint firstAttribute="trailing" secondItem="cOG-CB-VCz" secondAttribute="trailing" priority="750" constant="66" id="HKY-gJ-5Yn"/>
+                            <constraint firstItem="dLm-DX-gkW" firstAttribute="top" secondItem="BWn-AR-SGd" secondAttribute="bottom" constant="15" id="JIZ-4W-MxN"/>
+                            <constraint firstAttribute="trailing" secondItem="1Rt-Eh-V5R" secondAttribute="trailing" id="K3K-Tf-1EE"/>
+                            <constraint firstItem="cOG-CB-VCz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" priority="750" constant="66" id="SGs-lz-sbf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DFu-1m-dXY" secondAttribute="trailing" constant="52" id="Xtq-Mk-HoZ"/>
+                            <constraint firstAttribute="bottom" secondItem="1Rt-Eh-V5R" secondAttribute="bottom" id="Yj4-Ik-uhy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BWn-AR-SGd" secondAttribute="trailing" constant="52" id="Yvl-gs-anF"/>
+                            <constraint firstAttribute="bottom" secondItem="cOG-CB-VCz" secondAttribute="bottom" constant="75" id="fnb-yo-BTT"/>
+                            <constraint firstItem="c2b-Cv-EQJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="259.5" id="hc8-JX-6ZR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NMX-up-zox" secondAttribute="trailing" constant="52" id="iFz-DQ-qyq"/>
+                            <constraint firstItem="dLm-DX-gkW" firstAttribute="centerX" secondItem="sw6-Ai-kgI" secondAttribute="centerX" id="lQL-Kq-akb"/>
+                            <constraint firstItem="NMX-up-zox" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="106" id="vE8-g0-1kl"/>
+                            <constraint firstItem="c2b-Cv-EQJ" firstAttribute="centerX" secondItem="NMX-up-zox" secondAttribute="centerX" constant="11" id="w7B-mv-Nky"/>
+                            <constraint firstItem="BWn-AR-SGd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="xUf-yO-xNR"/>
+                            <constraint firstItem="NMX-up-zox" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="yMX-Ft-Zrv"/>
+                            <constraint firstItem="DFu-1m-dXY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="ztI-Lh-Fk5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="H3g-gE-3Jh"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="c2b-Cv-EQJ" id="jTU-hg-fsN"/>
+                        <outlet property="emailTxtField" destination="Cqv-L8-hho" id="aBx-n6-LKS"/>
+                        <outlet property="passwordTxtField" destination="sw6-Ai-kgI" id="JGX-zu-IR0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="114.53201970443351"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TK0-0N-5PT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FlA-Xp-isr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SB7-FT-4kO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nNh-OZ-0Oj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4LA-cQ-xJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.399999999999999" y="114.53201970443351"/>
+        </scene>
+        <!--RegistrationVC-->
+        <scene sceneID="xaZ-qi-GhP">
+            <objects>
+                <viewController id="OuT-Hf-msQ" customClass="RegistrationVC" customModule="Cookivan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fZ1-y3-sa0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBgImg" translatesAutoresizingMaskIntoConstraints="NO" id="TSI-gr-i7m">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3sh-Te-xgb">
+                                <rect key="frame" x="52" y="251" width="310" height="222"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nPx-xS-bzf" customClass="RoundedTextField" customModule="Cookivan" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="Ue3-fc-zUb"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.80392156859999997" green="0.81176470590000005" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans SemiBold" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" red="0.80392156859999997" green="0.81176470590000005" blue="0.82352941180000006" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7kV-45-fDx" customClass="RoundedTextField" customModule="Cookivan" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="58" width="310" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="FmP-5e-5sc"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.80392156859999997" green="0.81176470590000005" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans SemiBold" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" red="0.80392156859999997" green="0.81176470590000005" blue="0.82352941180000006" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pbz-tj-kOF" customClass="RoundedTextField" customModule="Cookivan" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="116" width="310" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="7XA-vE-Qjg"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.80392156859999997" green="0.81176470590000005" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans SemiBold" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" red="0.80392156859999997" green="0.81176470590000005" blue="0.82352941180000006" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Подтвердить пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sqh-uj-9Ac" customClass="RoundedTextField" customModule="Cookivan" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="174" width="310" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="0VT-O9-mbu"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.80392156859999997" green="0.81176470590000005" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans SemiBold" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" red="0.80392156859999997" green="0.81176470590000005" blue="0.82352941180000006" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="k0D-3Q-G7e">
+                                <rect key="frame" x="31" y="106" width="331" height="119"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Зарегистрируйтесь, чтобы иметь доступ ко всем рецептам и функциям!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3v-xd-lc3">
+                                <rect key="frame" x="66" y="785.33333333333337" width="282" height="35.666666666666629"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfV-l4-yVp" customClass="RoundedButton" customModule="Cookivan" customModuleProvider="target">
+                                <rect key="frame" x="52" y="525" width="310" height="48"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="ErH-ay-OX9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans SemiBold" pointSize="13"/>
+                                <state key="normal" title="ЗАРЕГИСТРИРОВАТЬСЯ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerClicked:" destination="OuT-Hf-msQ" eventType="touchUpInside" id="O3Q-OI-3RX"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Uic-PB-r5Z">
+                                <rect key="frame" x="188" y="636" width="37" height="37"/>
+                                <color key="color" red="0.95294117647058818" green="0.35686274509803922" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doneRed" translatesAutoresizingMaskIntoConstraints="NO" id="qdo-D8-YKb">
+                                <rect key="frame" x="330.33333333333331" y="384.66666666666669" width="16.666666666666686" height="12.666666666666686"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16.800000000000001" id="N8E-1a-GV0"/>
+                                    <constraint firstAttribute="height" constant="12.6" id="uLL-hX-eKC"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doneRed" translatesAutoresizingMaskIntoConstraints="NO" id="kVi-HI-MhR">
+                                <rect key="frame" x="330.33333333333331" y="442.66666666666669" width="16.666666666666686" height="12.666666666666686"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16.800000000000001" id="4hI-Mj-9k9"/>
+                                    <constraint firstAttribute="height" constant="12.6" id="p30-7C-hQs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m3v-xd-lc3" firstAttribute="leading" secondItem="fZ1-y3-sa0" secondAttribute="leading" priority="750" constant="66" id="10P-gx-4wG"/>
+                            <constraint firstAttribute="bottom" secondItem="m3v-xd-lc3" secondAttribute="bottom" constant="75" id="1lx-0u-kkX"/>
+                            <constraint firstItem="Uic-PB-r5Z" firstAttribute="centerX" secondItem="k0D-3Q-G7e" secondAttribute="centerX" constant="10" id="3Ts-zl-71j"/>
+                            <constraint firstItem="qdo-D8-YKb" firstAttribute="trailing" secondItem="pbz-tj-kOF" secondAttribute="trailing" constant="-15" id="4DN-u9-nbY"/>
+                            <constraint firstItem="TSI-gr-i7m" firstAttribute="top" secondItem="fZ1-y3-sa0" secondAttribute="top" id="6fD-UO-FCd"/>
+                            <constraint firstItem="hfJ-ec-gpT" firstAttribute="trailing" secondItem="jfV-l4-yVp" secondAttribute="trailing" constant="52" id="6rA-i4-n0u"/>
+                            <constraint firstAttribute="bottom" secondItem="TSI-gr-i7m" secondAttribute="bottom" id="6sI-hz-Weg"/>
+                            <constraint firstItem="hfJ-ec-gpT" firstAttribute="trailing" secondItem="k0D-3Q-G7e" secondAttribute="trailing" constant="52" id="AHC-KN-Rxx"/>
+                            <constraint firstItem="k0D-3Q-G7e" firstAttribute="top" secondItem="fZ1-y3-sa0" secondAttribute="top" constant="106" id="D3v-le-d7B"/>
+                            <constraint firstItem="kVi-HI-MhR" firstAttribute="trailing" secondItem="Sqh-uj-9Ac" secondAttribute="trailing" constant="-15" id="EqP-e2-EVj"/>
+                            <constraint firstAttribute="trailing" secondItem="TSI-gr-i7m" secondAttribute="trailing" id="FaO-eW-iL2"/>
+                            <constraint firstItem="Uic-PB-r5Z" firstAttribute="centerY" secondItem="fZ1-y3-sa0" secondAttribute="centerY" constant="206.5" id="LB5-zq-umf"/>
+                            <constraint firstItem="jfV-l4-yVp" firstAttribute="leading" secondItem="hfJ-ec-gpT" secondAttribute="leading" constant="52" id="Old-LP-ikV"/>
+                            <constraint firstItem="hfJ-ec-gpT" firstAttribute="trailing" secondItem="3sh-Te-xgb" secondAttribute="trailing" constant="52" id="WDn-Ed-YMf"/>
+                            <constraint firstItem="3sh-Te-xgb" firstAttribute="leading" secondItem="hfJ-ec-gpT" secondAttribute="leading" constant="52" id="a6K-p1-O8X"/>
+                            <constraint firstItem="qdo-D8-YKb" firstAttribute="centerY" secondItem="pbz-tj-kOF" secondAttribute="centerY" id="d6D-Tl-wCr"/>
+                            <constraint firstItem="3sh-Te-xgb" firstAttribute="top" secondItem="k0D-3Q-G7e" secondAttribute="bottom" constant="26" id="dzL-Le-4Q9"/>
+                            <constraint firstItem="TSI-gr-i7m" firstAttribute="leading" secondItem="fZ1-y3-sa0" secondAttribute="leading" id="eu6-hb-UNa"/>
+                            <constraint firstItem="k0D-3Q-G7e" firstAttribute="leading" secondItem="hfJ-ec-gpT" secondAttribute="leading" constant="31" id="hPb-WM-cOy"/>
+                            <constraint firstItem="jfV-l4-yVp" firstAttribute="top" secondItem="3sh-Te-xgb" secondAttribute="bottom" constant="52" id="m8x-zN-Hs9"/>
+                            <constraint firstItem="kVi-HI-MhR" firstAttribute="centerY" secondItem="Sqh-uj-9Ac" secondAttribute="centerY" id="xEb-Xt-dVH"/>
+                            <constraint firstAttribute="trailing" secondItem="m3v-xd-lc3" secondAttribute="trailing" priority="750" constant="66" id="zlo-c3-0Jb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hfJ-ec-gpT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="e5A-Ow-VDd"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Uic-PB-r5Z" id="86X-wN-ZhT"/>
+                        <outlet property="confirmPassCheckImg" destination="kVi-HI-MhR" id="vO4-QA-exX"/>
+                        <outlet property="confirmPassTxt" destination="Sqh-uj-9Ac" id="gBf-pp-rhg"/>
+                        <outlet property="emailTxt" destination="7kV-45-fDx" id="4F4-II-Jwq"/>
+                        <outlet property="passCheckImg" destination="qdo-D8-YKb" id="fTi-Pm-6cs"/>
+                        <outlet property="passwordTxt" destination="pbz-tj-kOF" id="MZn-ia-zZh"/>
+                        <outlet property="usernameTxt" destination="nPx-xS-bzf" id="g9Q-GW-R1i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AY2-v6-203" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1769.5652173913045" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doneRed" width="18" height="13"/>
+        <image name="loginBgImg" width="375" height="812"/>
+        <image name="logo" width="324" height="119"/>
+    </resources>
+</document>
