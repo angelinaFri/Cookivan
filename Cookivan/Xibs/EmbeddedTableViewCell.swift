@@ -25,7 +25,7 @@ class EmbeddedTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
+    } 
 
 //    func collectionReloadData(){
 //        DispatchQueue.main.async(execute: {
@@ -39,10 +39,8 @@ extension EmbeddedTableViewCell {
     func setCollectionViewDataSourceDelegate<D: UICollectionViewDataSource & UICollectionViewDelegate>(_ dataSourseDelegate: D, forRow row: Int) {
         collectionView.delegate = dataSourseDelegate
         collectionView.dataSource = dataSourseDelegate
-//        collectionView.tag = row
-        // stops collection view if it was scrolling
-//        collectionView.setContentOffset(collectionView.contentOffset, animated: false)
-        collectionView.reloadData()
+        collectionView.contentOffset = .zero
+//        collectionView.reloadData()
     }
 }
 

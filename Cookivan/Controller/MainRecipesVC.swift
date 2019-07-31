@@ -55,6 +55,7 @@ extension MainRecipesVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewID", for: indexPath) as! RecipesCollectionViewCell
+        
         cell.recipesCollectionViewCell.image = collectionViewCellData[indexPath.section][indexPath.row]
         return cell
 
@@ -74,11 +75,12 @@ extension MainRecipesVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         guard let tableViewCell = cell as? EmbeddedTableViewCell else { return }
         tableViewCell.setCollectionViewDataSourceDelegate(self, forRow: indexPath.row)
+//       tableViewCell.collectionView.reloadData()
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView()
-        view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0) 
         let label = UILabel()
         label.text = sectionTitles[section]
         label.font = UIFont(name: "OpenSans-Regular", size: 17)
