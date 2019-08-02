@@ -65,13 +65,13 @@ extension MainRecipesVC: UICollectionViewDelegate, UICollectionViewDataSource {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewID", for: indexPath) as! RecipesCollectionViewCell
         
-        cell.recipesCollectionViewCell.image = collectionViewCellData[indexPath.section][indexPath.row]
+        cell.recipesCollectionViewCellImg.image = collectionViewCellData[indexPath.section][indexPath.row]
         return cell
 
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 180, height: 200)
+        return CGSize(width: 180, height: 238)
     }
 
 
@@ -92,7 +92,7 @@ extension MainRecipesVC: UITableViewDataSource, UITableViewDelegate {
         view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0) 
         let label = UILabel()
         label.text = sectionTitles[section]
-        label.font = UIFont(name: "OpenSans-Regular", size: 17)
+        label.font = UIFont(name: "OpenSans-SemiBold", size: 17)
         label.textColor = #colorLiteral(red: 0.2784313725, green: 0.2941176471, blue: 0.3607843137, alpha: 1)
         label.frame = CGRect(x: 16, y: 30, width: 250, height: 22)
         view.addSubview(label)
@@ -131,7 +131,7 @@ extension MainRecipesVC: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 238
     }
 
 }

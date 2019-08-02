@@ -11,10 +11,10 @@
 		38094A5B0415B1972BA55390 /* Pods_CookivanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1616E46CDBC02C295E469C7 /* Pods_CookivanUITests.framework */; };
 		5817625122DDC13400425AD9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817625022DDC13400425AD9 /* User.swift */; };
 		5817625322DDC62900425AD9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817625222DDC62900425AD9 /* Extensions.swift */; };
+		5821601522F49AE900E72D64 /* RecipesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 584FFD6322EED6DE00A7CB0F /* RecipesCollectionViewCell.xib */; };
+		5821601622F49AF000E72D64 /* RecipesCollectionViewCell.swift in Resources */ = {isa = PBXBuildFile; fileRef = 584FFD6222EED6DE00A7CB0F /* RecipesCollectionViewCell.swift */; };
 		584FFD5E22EED56C00A7CB0F /* EmbeddedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FFD5C22EED56C00A7CB0F /* EmbeddedTableViewCell.swift */; };
 		584FFD5F22EED56C00A7CB0F /* EmbeddedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 584FFD5D22EED56C00A7CB0F /* EmbeddedTableViewCell.xib */; };
-		584FFD6422EED6DE00A7CB0F /* RecipesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FFD6222EED6DE00A7CB0F /* RecipesCollectionViewCell.swift */; };
-		584FFD6522EED6DE00A7CB0F /* RecipesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 584FFD6322EED6DE00A7CB0F /* RecipesCollectionViewCell.xib */; };
 		584FFD6A22EF179100A7CB0F /* WeekRecipesChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FFD6922EF179100A7CB0F /* WeekRecipesChildVC.swift */; };
 		584FFD7022EF1F2100A7CB0F /* HealthyFoodChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FFD6F22EF1F2100A7CB0F /* HealthyFoodChildVC.swift */; };
 		584FFD7222EF1F5F00A7CB0F /* FoodNewsChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FFD7122EF1F5F00A7CB0F /* FoodNewsChildVC.swift */; };
@@ -39,6 +39,7 @@
 		58CF756722DC8CC000729617 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58CF756622DC8CC000729617 /* OpenSans-Regular.ttf */; };
 		58CF756C22DCA19300729617 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF756B22DCA19300729617 /* RoundedViews.swift */; };
 		58CF757122DCC6F700729617 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF757022DCC6F700729617 /* Constants.swift */; };
+		58E9492B22F49022009E96C7 /* RecipesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584FFD6222EED6DE00A7CB0F /* RecipesCollectionViewCell.swift */; };
 		BD42FF25B890F5E2C5D9AA2A /* Pods_CookivanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623D1646618774E521C2E0D8 /* Pods_CookivanTests.framework */; };
 		CCC4918502BD659964556EC6 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC49D7180B0BF1DE7378118 /* Storage.swift */; };
 		CCC49408EB9311A96BCBE178 /* FireBaseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC49118A6CA6AE2DDC5DA81 /* FireBaseStorage.swift */; };
@@ -433,7 +434,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				584FFD6522EED6DE00A7CB0F /* RecipesCollectionViewCell.xib in Resources */,
+				5821601622F49AF000E72D64 /* RecipesCollectionViewCell.swift in Resources */,
+				5821601522F49AE900E72D64 /* RecipesCollectionViewCell.xib in Resources */,
 				58CF756722DC8CC000729617 /* OpenSans-Regular.ttf in Resources */,
 				58CAC78B22F3470A00466205 /* OpenSans-SemiBold.ttf in Resources */,
 				587A506322DB14620010781F /* LaunchScreen.storyboard in Resources */,
@@ -559,6 +561,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E9492B22F49022009E96C7 /* RecipesCollectionViewCell.swift in Sources */,
 				58CF756C22DCA19300729617 /* RoundedViews.swift in Sources */,
 				584FFD7422EF1FA500A7CB0F /* AdviceChildVC.swift in Sources */,
 				584FFD7A22F035AF00A7CB0F /* PlainTableViewCell.swift in Sources */,
@@ -572,7 +575,6 @@
 				584FFD7222EF1F5F00A7CB0F /* FoodNewsChildVC.swift in Sources */,
 				5817625322DDC62900425AD9 /* Extensions.swift in Sources */,
 				584FFD5E22EED56C00A7CB0F /* EmbeddedTableViewCell.swift in Sources */,
-				584FFD6422EED6DE00A7CB0F /* RecipesCollectionViewCell.swift in Sources */,
 				CCC4918502BD659964556EC6 /* Storage.swift in Sources */,
 				584FFD6A22EF179100A7CB0F /* WeekRecipesChildVC.swift in Sources */,
 				CCC49408EB9311A96BCBE178 /* FireBaseStorage.swift in Sources */,
