@@ -33,6 +33,8 @@
 		587A506E22DB14620010781F /* CookivanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587A506D22DB14620010781F /* CookivanTests.swift */; };
 		587A507922DB14620010781F /* CookivanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587A507822DB14620010781F /* CookivanUITests.swift */; };
 		587A508A22DB1F410010781F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 587A508922DB1F410010781F /* GoogleService-Info.plist */; };
+		58CAC78A22F3467600466205 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58CAC78922F3467600466205 /* OpenSans-Bold.ttf */; };
+		58CAC78B22F3470A00466205 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58CF756822DC8CD000729617 /* OpenSans-SemiBold.ttf */; };
 		58CF756522DC79A600729617 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF756422DC79A600729617 /* RegistrationVC.swift */; };
 		58CF756722DC8CC000729617 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58CF756622DC8CC000729617 /* OpenSans-Regular.ttf */; };
 		58CF756C22DCA19300729617 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF756B22DCA19300729617 /* RoundedViews.swift */; };
@@ -94,6 +96,7 @@
 		587A507822DB14620010781F /* CookivanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookivanUITests.swift; sourceTree = "<group>"; };
 		587A507A22DB14620010781F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		587A508922DB1F410010781F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		58CAC78922F3467600466205 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		58CF756422DC79A600729617 /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
 		58CF756622DC8CC000729617 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		58CF756822DC8CD000729617 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -268,6 +271,7 @@
 			children = (
 				58CF756822DC8CD000729617 /* OpenSans-SemiBold.ttf */,
 				58CF756622DC8CC000729617 /* OpenSans-Regular.ttf */,
+				58CAC78922F3467600466205 /* OpenSans-Bold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -431,12 +435,14 @@
 			files = (
 				584FFD6522EED6DE00A7CB0F /* RecipesCollectionViewCell.xib in Resources */,
 				58CF756722DC8CC000729617 /* OpenSans-Regular.ttf in Resources */,
+				58CAC78B22F3470A00466205 /* OpenSans-SemiBold.ttf in Resources */,
 				587A506322DB14620010781F /* LaunchScreen.storyboard in Resources */,
 				587A506022DB14620010781F /* Assets.xcassets in Resources */,
 				587A508A22DB1F410010781F /* GoogleService-Info.plist in Resources */,
 				584FFD5F22EED56C00A7CB0F /* EmbeddedTableViewCell.xib in Resources */,
 				584FFD7B22F035AF00A7CB0F /* PlainTableViewCell.xib in Resources */,
 				5856371422E081260034EBF1 /* ForgotPasswordVC.xib in Resources */,
+				58CAC78A22F3467600466205 /* OpenSans-Bold.ttf in Resources */,
 				587A505E22DB14610010781F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

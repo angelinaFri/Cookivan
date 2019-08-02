@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FlA-Xp-isr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1kf-Ja-gpT">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -108,7 +108,7 @@
                                         </state>
                                         <connections>
                                             <action selector="guestClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lzI-Ln-uGK"/>
-                                            <segue destination="hDK-oe-clt" kind="show" id="1ZV-uS-Z2J"/>
+                                            <segue destination="hDK-oe-clt" kind="show" id="Th9-4D-wqZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -359,7 +359,7 @@
         <!--Item-->
         <scene sceneID="Jeh-hu-csa">
             <objects>
-                <viewController id="1kf-Ja-gpT" customClass="MainRecipesVC" customModule="Cookivan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainRecipesVCSID" id="1kf-Ja-gpT" customClass="MainRecipesVC" customModule="Cookivan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Cy-ed-qLH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -390,7 +390,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="shC-as-3My">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="hDK-oe-clt" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarControllerSID" automaticallyAdjustsScrollViewInsets="NO" id="hDK-oe-clt" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7BK-Tv-BFe">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -412,6 +412,6 @@
         <image name="logo" width="324" height="119"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1ZV-uS-Z2J"/>
+        <segue reference="Th9-4D-wqZ"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -54,3 +54,25 @@ class RoundedShadowView: UIView {
     }
 }
 
+//class RoundedImageViewWithShadow: UIImageView, Shadow {
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+//       
+//    }
+//}
+
+//protocol Shadow {}
+//
+//extension Shadow where Self: UIView {
+//    func configShadow(image: UIImageView,
+//                      color: CGColor, opacity: Float, radius: CGFloat) {
+//        let view = UIView()
+//        let image = image
+//        view.layer.shadowOffset = .zero
+//        view.clipsToBounds = false
+//        view.layer.shouldRasterize = true
+//        view.addSubview(image)
+//
+//    }
+//}
+

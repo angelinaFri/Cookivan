@@ -11,10 +11,11 @@ import UIKit
 class PlainTableViewCell: UITableViewCell {
 
     @IBOutlet weak var plainTableViewImg: UIImageView!
-    
+    @IBOutlet weak var containerView: UIView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        plainTableViewImg.applyshadowWithCorner(containerView: containerView, cornerRadious: 10)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -24,3 +25,4 @@ class PlainTableViewCell: UITableViewCell {
     }
     
 }
+

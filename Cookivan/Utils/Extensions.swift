@@ -23,3 +23,21 @@ extension UIViewController {
         present(alert, animated: true, completion: nil)
     }
 }
+
+extension UIImageView {
+    func applyshadowWithCorner(containerView : UIView, cornerRadious : CGFloat){
+        containerView.clipsToBounds = false
+//        containerView.layer.masksToBounds = true
+        containerView.layer.shadowColor = #colorLiteral(red: 0.168627451, green: 0.1137254902, blue: 0.1215686275, alpha: 1)
+        containerView.layer.shadowOpacity = 0.3
+        containerView.layer.shadowOffset = CGSize(width: 1, height: 3)
+        containerView.layer.shadowRadius = 3
+        containerView.layer.cornerRadius = cornerRadious
+        self.layer.masksToBounds = true
+        self.clipsToBounds = true
+        self.layer.cornerRadius = cornerRadious
+    }
+}
+
+
+

@@ -19,9 +19,9 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FbQ-Jw-rvB">
-                        <rect key="frame" x="16" y="0.0" width="304" height="96.5"/>
+                        <rect key="frame" x="8" y="8" width="312" height="80.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="16" minimumInteritemSpacing="16" id="rBQ-ok-NNb">
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="4" minimumInteritemSpacing="4" id="rBQ-ok-NNb">
                             <size key="itemSize" width="180" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -34,10 +34,10 @@
                     </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="FbQ-Jw-rvB" secondAttribute="bottom" id="GzK-F0-MxE"/>
+                    <constraint firstAttribute="bottom" secondItem="FbQ-Jw-rvB" secondAttribute="bottom" constant="8" id="GzK-F0-MxE"/>
                     <constraint firstAttribute="trailing" secondItem="FbQ-Jw-rvB" secondAttribute="trailing" id="HaL-RV-q1C"/>
-                    <constraint firstItem="FbQ-Jw-rvB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="L2l-pm-795"/>
-                    <constraint firstItem="FbQ-Jw-rvB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Sxv-un-Rub"/>
+                    <constraint firstItem="FbQ-Jw-rvB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="L2l-pm-795"/>
+                    <constraint firstItem="FbQ-Jw-rvB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Sxv-un-Rub"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

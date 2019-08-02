@@ -35,7 +35,10 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func guestClicked(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+//        dismiss(animated: true, completion: nil)
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarControllerSID") as? MainRecipesVC {
+        present(vc, animated: true, completion: nil)
+        }
     }
 
     func userSignin() {

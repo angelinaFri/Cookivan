@@ -30,8 +30,19 @@ class MainRecipesVC: UIViewController {
         [#imageLiteral(resourceName: "18"), #imageLiteral(resourceName: "30"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "18"), #imageLiteral(resourceName: "20"), #imageLiteral(resourceName: "37"), #imageLiteral(resourceName: "21"), #imageLiteral(resourceName: "28"), #imageLiteral(resourceName: "10"), #imageLiteral(resourceName: "24"), #imageLiteral(resourceName: "27"), #imageLiteral(resourceName: "16"), #imageLiteral(resourceName: "26"), #imageLiteral(resourceName: "33"), #imageLiteral(resourceName: "35") ],
         [#imageLiteral(resourceName: "18"), #imageLiteral(resourceName: "30"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "18"), #imageLiteral(resourceName: "20"), #imageLiteral(resourceName: "37"), #imageLiteral(resourceName: "21"), #imageLiteral(resourceName: "28"), #imageLiteral(resourceName: "10"), #imageLiteral(resourceName: "24"), #imageLiteral(resourceName: "27"), #imageLiteral(resourceName: "16"), #imageLiteral(resourceName: "26"), #imageLiteral(resourceName: "33"), #imageLiteral(resourceName: "35") ]]
 
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupNavBar()
+    }
 
+    func setupNavBar() {
+        let label = UILabel()
+        label.text = "Готовим"
+        label.textColor = #colorLiteral(red: 0.2784313725, green: 0.2941176471, blue: 0.3607843137, alpha: 1)
+        label.font = UIFont(name: "OpenSans-Bold", size: 34)
+        self.tabBarController?.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
+        self.tabBarController?.navigationItem.hidesBackButton = true
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,9 +51,7 @@ class MainRecipesVC: UIViewController {
         tableView.register(UINib(nibName: "EmbeddedTableViewCell", bundle: nil), forCellReuseIdentifier: "EmbeddedTableViewCell")
         tableView.register(UINib(nibName: "PlainTableViewCell", bundle: nil), forCellReuseIdentifier: "PlainTableViewCell")
 
-        // Do any additional setup after loading the view.
     }
-
 }
 
 // MARK: - Collection View DataSourse & Delegate

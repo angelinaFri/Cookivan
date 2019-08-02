@@ -11,27 +11,37 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlainTableViewCell" rowHeight="200" id="KGk-i7-Jjw" customClass="PlainTableViewCell" customModule="Cookivan" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PlainTableViewCell" rowHeight="200" id="KGk-i7-Jjw" customClass="PlainTableViewCell" customModule="Cookivan" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="347" height="201"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="347" height="200.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12" translatesAutoresizingMaskIntoConstraints="NO" id="Lfz-YG-pH7">
-                        <rect key="frame" x="16" y="0.0" width="315" height="200.5"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYV-1B-9eF">
+                        <rect key="frame" x="16" y="8" width="315" height="184.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12" translatesAutoresizingMaskIntoConstraints="NO" id="Lfz-YG-pH7" customClass="RoundedImageViewWithShadow" customModule="Cookivan" customModuleProvider="target">
+                        <rect key="frame" x="16" y="8" width="315" height="184.5"/>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+                    <constraint firstItem="OYV-1B-9eF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="1QT-WU-0p5"/>
                     <constraint firstAttribute="trailing" secondItem="Lfz-YG-pH7" secondAttribute="trailing" constant="16" id="6Rk-xA-B71"/>
-                    <constraint firstAttribute="bottom" secondItem="Lfz-YG-pH7" secondAttribute="bottom" id="Tjn-XL-OxM"/>
+                    <constraint firstItem="OYV-1B-9eF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="HUx-af-BGr"/>
+                    <constraint firstAttribute="bottom" secondItem="Lfz-YG-pH7" secondAttribute="bottom" constant="8" id="Tjn-XL-OxM"/>
+                    <constraint firstAttribute="trailing" secondItem="OYV-1B-9eF" secondAttribute="trailing" constant="16" id="VUn-Xe-eCV"/>
+                    <constraint firstAttribute="bottom" secondItem="OYV-1B-9eF" secondAttribute="bottom" constant="8" id="jf2-Dt-pEt"/>
                     <constraint firstItem="Lfz-YG-pH7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="qkr-xG-MFE"/>
-                    <constraint firstItem="Lfz-YG-pH7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xYu-XQ-8wn"/>
+                    <constraint firstItem="Lfz-YG-pH7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="xYu-XQ-8wn"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
+                <outlet property="containerView" destination="OYV-1B-9eF" id="c2k-hu-dd9"/>
                 <outlet property="plainTableViewImg" destination="Lfz-YG-pH7" id="SqV-3c-0WA"/>
             </connections>
             <point key="canvasLocation" x="61.594202898550726" y="84.040178571428569"/>
