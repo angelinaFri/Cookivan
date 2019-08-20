@@ -1,17 +1,23 @@
 //
-//  FoodNewsVC.swift
+//  RecipeVC.swift
 //  Cookivan
 //
-//  Created by Angelina on 7/29/19.
+//  Created by Angelina on 8/12/19.
 //  Copyright © 2019 Angelina Friz. All rights reserved.
 //
 
 import UIKit
 
-class FoodNewsChildVC: UIViewController {
+class RecipeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
+
 
         // Do any additional setup after loading the view.
     }

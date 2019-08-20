@@ -21,3 +21,8 @@ struct AppImages {
     static let GreenCheck = "doneGreen"
     static let RedCheck = "doneRed"
 }
+
+struct Segues {
+    static let ToSubCategories = "toSubCategoryVC"
+    static let ToRecipes = "toRecipeVC"
+}

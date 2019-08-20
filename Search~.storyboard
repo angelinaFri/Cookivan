@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FlA-Xp-isr">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -22,17 +22,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="Cookivan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBgImg" translatesAutoresizingMaskIntoConstraints="NO" id="1Rt-Eh-V5R">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="880" width="414" height="16"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BWn-AR-SGd">
-                                <rect key="frame" x="52" y="251" width="271" height="106"/>
+                                <rect key="frame" x="52" y="148" width="310" height="106"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cqv-L8-hho" customClass="RoundedTextField" customModule="Cookivan" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="271" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="48"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="750" constant="48" id="dgH-ul-cRf"/>
@@ -47,7 +47,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sw6-Ai-kgI" customClass="RoundedTextField" customModule="Cookivan" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="58" width="271" height="48"/>
+                                        <rect key="frame" x="0.0" y="58" width="310" height="48"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="750" constant="48" id="egm-Te-U0u"/>
@@ -64,13 +64,13 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="NMX-up-zox">
-                                <rect key="frame" x="31" y="106" width="292" height="119"/>
+                                <rect key="frame" x="31" y="106" width="331" height="16"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DFu-1m-dXY">
-                                <rect key="frame" x="52" y="474" width="271" height="164"/>
+                                <rect key="frame" x="52" y="371" width="310" height="164"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsB-Gm-FiJ" customClass="RoundedButton" customModule="Cookivan" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="271" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="48"/>
                                         <color key="backgroundColor" red="0.32549019607843138" green="0.65098039215686276" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="750" constant="48" id="EBL-Q2-cvw"/>
@@ -84,7 +84,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhF-H9-fSh" customClass="RoundedButton" customModule="Cookivan" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="58" width="271" height="48"/>
+                                        <rect key="frame" x="0.0" y="58" width="310" height="48"/>
                                         <color key="backgroundColor" red="0.95294117647058818" green="0.35686274509803922" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="750" constant="48" id="Ifv-oL-cye"/>
@@ -98,7 +98,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUL-Wb-AsR" customClass="ClearBGButton" customModule="Cookivan" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="116" width="271" height="48"/>
+                                        <rect key="frame" x="0.0" y="116" width="310" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="750" constant="48" id="Yqs-Uz-g7g"/>
                                         </constraints>
@@ -122,13 +122,13 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Зарегистрируйтесь, чтобы иметь доступ ко всем рецептам и функциям!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOG-CB-VCz">
-                                <rect key="frame" x="66" y="701.33333333333337" width="243" height="35.666666666666629"/>
+                                <rect key="frame" x="66" y="785.33333333333337" width="282" height="35.666666666666629"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLm-DX-gkW">
-                                <rect key="frame" x="143.66666666666666" y="372" width="88" height="27"/>
+                                <rect key="frame" x="163" y="269" width="88" height="27"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="11"/>
                                 <state key="normal" title="Забыли пароль?">
                                     <color key="titleColor" red="0.80392156862745101" green="0.81176470588235294" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
@@ -138,7 +138,7 @@
                                 </connections>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="c2b-Cv-EQJ">
-                                <rect key="frame" x="169.66666666666666" y="647" width="37" height="37"/>
+                                <rect key="frame" x="189" y="689" width="37" height="37"/>
                                 <color key="color" red="0.95294117649999999" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
@@ -177,22 +177,40 @@
             </objects>
             <point key="canvasLocation" x="916" y="114.53201970443351"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TK0-0N-5PT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FlA-Xp-isr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SB7-FT-4kO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nNh-OZ-0Oj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4LA-cQ-xJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.399999999999999" y="114.53201970443351"/>
+        </scene>
         <!--RegistrationVC-->
         <scene sceneID="xaZ-qi-GhP">
             <objects>
                 <viewController id="OuT-Hf-msQ" customClass="RegistrationVC" customModule="Cookivan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fZ1-y3-sa0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBgImg" translatesAutoresizingMaskIntoConstraints="NO" id="TSI-gr-i7m">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3sh-Te-xgb">
-                                <rect key="frame" x="52" y="251" width="271" height="222"/>
+                                <rect key="frame" x="52" y="148" width="310" height="222"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nPx-xS-bzf" customClass="RoundedTextField" customModule="Cookivan" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="271" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="48"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="Ue3-fc-zUb"/>
@@ -207,7 +225,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7kV-45-fDx" customClass="RoundedTextField" customModule="Cookivan" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="58" width="271" height="48"/>
+                                        <rect key="frame" x="0.0" y="58" width="310" height="48"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="FmP-5e-5sc"/>
@@ -222,7 +240,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pbz-tj-kOF" customClass="RoundedTextField" customModule="Cookivan" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="116" width="271" height="48"/>
+                                        <rect key="frame" x="0.0" y="116" width="310" height="48"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="7XA-vE-Qjg"/>
@@ -237,7 +255,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Подтвердить пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sqh-uj-9Ac" customClass="RoundedTextField" customModule="Cookivan" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="174" width="271" height="48"/>
+                                        <rect key="frame" x="0.0" y="174" width="310" height="48"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="0VT-O9-mbu"/>
@@ -254,16 +272,16 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="k0D-3Q-G7e">
-                                <rect key="frame" x="31" y="106" width="292" height="119"/>
+                                <rect key="frame" x="31" y="106" width="331" height="16"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Зарегистрируйтесь, чтобы иметь доступ ко всем рецептам и функциям!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3v-xd-lc3">
-                                <rect key="frame" x="66" y="701.33333333333337" width="243" height="35.666666666666629"/>
+                                <rect key="frame" x="66" y="785.33333333333337" width="282" height="35.666666666666629"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfV-l4-yVp" customClass="RoundedButton" customModule="Cookivan" customModuleProvider="target">
-                                <rect key="frame" x="52" y="525" width="271" height="48"/>
+                                <rect key="frame" x="52" y="422" width="310" height="48"/>
                                 <color key="backgroundColor" red="0.95294117649999999" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="ErH-ay-OX9"/>
@@ -278,18 +296,18 @@
                                 </connections>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Uic-PB-r5Z">
-                                <rect key="frame" x="168.66666666666666" y="594" width="37" height="37"/>
+                                <rect key="frame" x="188" y="636" width="37" height="37"/>
                                 <color key="color" red="0.95294117647058818" green="0.35686274509803922" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doneRed" translatesAutoresizingMaskIntoConstraints="NO" id="qdo-D8-YKb">
-                                <rect key="frame" x="291.33333333333331" y="384.66666666666669" width="16.666666666666686" height="12.666666666666686"/>
+                                <rect key="frame" x="330.33333333333331" y="281.66666666666669" width="16.666666666666686" height="12.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="16.800000000000001" id="N8E-1a-GV0"/>
                                     <constraint firstAttribute="height" constant="12.6" id="uLL-hX-eKC"/>
                                 </constraints>
                             </imageView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doneRed" translatesAutoresizingMaskIntoConstraints="NO" id="kVi-HI-MhR">
-                                <rect key="frame" x="291.33333333333331" y="442.66666666666669" width="16.666666666666686" height="12.666666666666686"/>
+                                <rect key="frame" x="330.33333333333331" y="339.66666666666669" width="16.666666666666686" height="12.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="16.800000000000001" id="4hI-Mj-9k9"/>
                                     <constraint firstAttribute="height" constant="12.6" id="p30-7C-hQs"/>
@@ -338,6 +356,25 @@
             </objects>
             <point key="canvasLocation" x="1769.5652173913045" y="114.50892857142857"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="EwO-Sr-ONc">
+            <objects>
+                <viewController id="lri-lD-iVy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zkt-pI-jgZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LEf-Zf-Qoc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="search-icon" id="aSl-K9-ooA">
+                        <color key="badgeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhh-B1-gg7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3506" y="678"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="shC-as-3My">
             <objects>
@@ -347,75 +384,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.95294117649999999" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="KRg-g6-eFN" kind="relationship" relationship="viewControllers" id="MeV-GX-fK2"/>
-                        <segue destination="fnf-ik-7rn" kind="relationship" relationship="viewControllers" id="lKu-7u-ZM9"/>
-                        <segue destination="8wV-pw-Kcv" kind="relationship" relationship="viewControllers" id="ld9-zB-Stz"/>
-                        <segue destination="Bqx-ec-JTZ" kind="relationship" relationship="viewControllers" id="wXs-eA-izd"/>
-                        <segue destination="huX-eG-Izz" kind="relationship" relationship="viewControllers" id="vdZ-hE-Rga"/>
+                        <segue destination="Re2-uI-I3z" kind="relationship" relationship="viewControllers" id="MeV-GX-fK2"/>
+                        <segue destination="lri-lD-iVy" kind="relationship" relationship="viewControllers" id="lKu-7u-ZM9"/>
+                        <segue destination="86O-qb-IDu" kind="relationship" relationship="viewControllers" id="ld9-zB-Stz"/>
+                        <segue destination="XXN-R9-8PC" kind="relationship" relationship="viewControllers" id="wXs-eA-izd"/>
+                        <segue destination="Fji-cZ-2qs" kind="relationship" relationship="viewControllers" id="vdZ-hE-Rga"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RcZ-tX-h5P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1769.5652173913045" y="1030.5803571428571"/>
         </scene>
-        <!--AllRecipes-->
-        <scene sceneID="1Do-gw-czq">
+        <!--View Controller-->
+        <scene sceneID="EvB-RD-lqp">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MainRecipesVCSID" storyboardName="AllRecipes" id="KRg-g6-eFN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Cook Icon Red" id="QnF-xI-t7R"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="En7-YF-kKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="86O-qb-IDu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x24-1O-dJ6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="WE6-4u-5Ue"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Like Icon Gery" id="DNa-aE-Gh5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pQb-Nc-cXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2612" y="952"/>
+            <point key="canvasLocation" x="4448" y="678"/>
         </scene>
-        <!--Search-->
-        <scene sceneID="nzQ-Dr-tWf">
+        <!--View Controller-->
+        <scene sceneID="HOs-Iw-aXw">
             <objects>
-                <viewControllerPlaceholder storyboardName="Search" id="fnf-ik-7rn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="search-icon" id="chA-RK-W6U"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pn6-f6-EXc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="XXN-R9-8PC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A6l-Ty-Lt4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fTW-XJ-dxF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Bag Icon" id="tW5-A0-EJc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xb3-XC-caM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2631" y="985"/>
+            <point key="canvasLocation" x="2674" y="1454"/>
         </scene>
-        <!--Favorites-->
-        <scene sceneID="Cwh-ma-bjC">
+        <!--View Controller-->
+        <scene sceneID="SjC-NS-BkP">
             <objects>
-                <viewControllerPlaceholder storyboardName="Favorites" id="8wV-pw-Kcv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Like Icon Gery" id="6qs-dQ-JFS"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1ny-bn-ovt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Fji-cZ-2qs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xi2-8Q-vpB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eP1-Y9-5n1"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Account Icon" id="d81-mn-FQn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZ8-Ww-NPU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2630" y="1031"/>
+            <point key="canvasLocation" x="3607" y="1454"/>
         </scene>
-        <!--ShopList-->
-        <scene sceneID="8IE-ca-3rq">
+        <!--MainRecipesVCSID-->
+        <scene sceneID="0ZF-Io-rbv">
             <objects>
-                <viewControllerPlaceholder storyboardName="ShopList" id="Bqx-ec-JTZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Bag Icon" id="1TO-0D-RpI"/>
+                <viewControllerPlaceholder storyboardIdentifier="MainRecipesVCSID" storyboardName="AllRecipes" referencedIdentifier="MainRecipesVCSID" id="Re2-uI-I3z" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ncP-eA-AJQ"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ttn-4v-hzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZ8-BI-GT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2623" y="1073"/>
-        </scene>
-        <!--Profile-->
-        <scene sceneID="BVa-7x-H7P">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="huX-eG-Izz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Account Icon" id="yJK-xH-fse"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f1v-09-SJ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2612" y="1118"/>
+            <point key="canvasLocation" x="2674" y="678"/>
         </scene>
     </scenes>
     <resources>
         <image name="Account Icon" width="21" height="24"/>
         <image name="Bag Icon" width="24" height="23"/>
-        <image name="Cook Icon Red" width="24" height="22"/>
         <image name="Like Icon Gery" width="24" height="22"/>
         <image name="doneRed" width="18" height="13"/>
         <image name="loginBgImg" width="375" height="812"/>

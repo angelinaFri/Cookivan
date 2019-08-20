@@ -1,14 +1,14 @@
 //
-//  HealthyFoodChildVC.swift
+//  SubCategoryVC.swift
 //  Cookivan
 //
-//  Created by Angelina on 7/29/19.
+//  Created by Angelina on 8/12/19.
 //  Copyright © 2019 Angelina Friz. All rights reserved.
 //
 
 import UIKit
 
-class HealthyFoodChildVC: UIViewController {
+class SubCategoryVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

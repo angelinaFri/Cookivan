@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af2efd73-7c5d-42eb-85b0-3fdcaff090d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Cookivan/Helper/UIViewController+Auth.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cookivan/Storage/FireBaseStorage.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cookivan/Storage/Storage.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cookivan/Storyboards/AllRecipes.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cookivan/Storyboards/Favorites.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cookivan/Storyboards/Profile.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cookivan/Storyboards/Search.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cookivan/Storyboards/ShopList.storyboard" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cookivan.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Cookivan.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cookivan/Controller/ForgotPasswordVC.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Cookivan/Controller/ForgotPasswordVC.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cookivan/Controller/LoginVC.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Cookivan/Controller/LoginVC.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cookivan/Controller/RegistrationVC.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Cookivan/Controller/RegistrationVC.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cookivan/Model/User.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Cookivan/Model/User.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cookivan/Utils/Extensions.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Cookivan/Utils/Extensions.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cookivan/Xibs/ForgotPasswordVC.xib" beforeDir="false" afterPath="$PROJECT_DIR$/Cookivan/Xibs/ForgotPasswordVC.xib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cookivan/Storyboards/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/Cookivan/Storyboards/Base.lproj/Main.storyboard" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Caches/AppCode2019.1/DerivedData/Cookivan-eoavpkipuktielajzwsvyfojifsc/Build/Intermediates.noindex/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +17,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_6356E25B-9D44-4D55-A4FD-34F446FE89A1" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -35,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cookivan/Controller/LoginVC.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+            <state relative-caret-position="570">
+              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
               <folding>
                 <element signature="e#141#153#0" expanded="true" />
               </folding>
@@ -47,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cookivan/Controller/RegistrationVC.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="86" column="40" lean-forward="true" selection-start-line="86" selection-end-line="87" />
+            <state relative-caret-position="1245">
+              <caret line="86" column="40" selection-start-line="86" selection-end-line="87" />
               <folding>
                 <element signature="e#141#153#0" expanded="true" />
               </folding>
@@ -59,29 +56,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Cookivan/Storage/FireBaseStorage.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+            <state relative-caret-position="330">
+              <caret line="22" column="76" lean-forward="true" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
               <folding>
                 <element signature="e#103#120#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mock:///FirebaseAuth.FIRAuth.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="514" column="102" selection-start-line="514" selection-start-column="80" selection-end-line="514" selection-end-column="102" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mock:///FirebaseAuth.FIRUser.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="335" column="62" selection-start-line="335" selection-start-column="52" selection-end-line="335" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -139,9 +118,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1400" />
-    <option name="height" value="823" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -149,6 +127,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,11 +174,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="Cookivan" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -246,20 +225,21 @@
       <updated>1563546157357</updated>
       <workItem from="1563546163358" duration="333000" />
       <workItem from="1563547251083" duration="8368000" />
+      <workItem from="1565536515023" duration="73000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8701000" />
+    <option name="totallyTimeSpent" value="8774000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18317358" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18526466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32968536" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -271,6 +251,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32968536" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -305,13 +286,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Cookivan/Controller/ForgotPasswordVC.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache_10E1001.zip!/5.0.1/x86_64/iphonesimulator12.2/UIKit.UIControl/UIKit.UIControl.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
@@ -336,16 +310,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cookivan/Controller/RegistrationLogic.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#103#120#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Cookivan/Controller/RegistrationLogic.swift" />
     <entry file="file://$PROJECT_DIR$/Cookivan/Helper/UIViewController+Auth.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -363,20 +328,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cookivan/Utils/Constants.swift">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cookivan/Model/User.swift">
+    <entry file="file://$PROJECT_DIR$/Cookivan/Controller/ForgotPasswordVC.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+        <state relative-caret-position="615">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Cookivan/Controller/LoginVC.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        <state relative-caret-position="570">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
           <folding>
             <element signature="e#141#153#0" expanded="true" />
           </folding>
@@ -385,18 +347,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Cookivan/Controller/RegistrationVC.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="86" column="40" lean-forward="true" selection-start-line="86" selection-end-line="87" />
+        <state relative-caret-position="1245">
+          <caret line="86" column="40" selection-start-line="86" selection-end-line="87" />
           <folding>
             <element signature="e#141#153#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Cookivan/Model/User.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cookivan/Utils/Constants.swift">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Cookivan/Storage/FireBaseStorage.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+        <state relative-caret-position="330">
+          <caret line="22" column="76" lean-forward="true" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
           <folding>
             <element signature="e#103#120#0" expanded="true" />
           </folding>

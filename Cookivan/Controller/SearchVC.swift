@@ -1,14 +1,14 @@
 //
-//  DietsVC.swift
+//  SearchVC.swift
 //  Cookivan
 //
-//  Created by Angelina on 7/29/19.
+//  Created by Angelina on 8/18/19.
 //  Copyright © 2019 Angelina Friz. All rights reserved.
 //
 
 import UIKit
 
-class DietsVC: UIViewController {
+class SearchVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

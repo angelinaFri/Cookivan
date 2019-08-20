@@ -30,19 +30,20 @@ class MainRecipesVC: UIViewController {
         [#imageLiteral(resourceName: "18"), #imageLiteral(resourceName: "30"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "18"), #imageLiteral(resourceName: "20"), #imageLiteral(resourceName: "37"), #imageLiteral(resourceName: "21"), #imageLiteral(resourceName: "28"), #imageLiteral(resourceName: "10"), #imageLiteral(resourceName: "24"), #imageLiteral(resourceName: "27"), #imageLiteral(resourceName: "16"), #imageLiteral(resourceName: "26"), #imageLiteral(resourceName: "33"), #imageLiteral(resourceName: "35") ],
         [#imageLiteral(resourceName: "18"), #imageLiteral(resourceName: "30"), #imageLiteral(resourceName: "6"), #imageLiteral(resourceName: "18"), #imageLiteral(resourceName: "20"), #imageLiteral(resourceName: "37"), #imageLiteral(resourceName: "21"), #imageLiteral(resourceName: "28"), #imageLiteral(resourceName: "10"), #imageLiteral(resourceName: "24"), #imageLiteral(resourceName: "27"), #imageLiteral(resourceName: "16"), #imageLiteral(resourceName: "26"), #imageLiteral(resourceName: "33"), #imageLiteral(resourceName: "35") ]]
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        setupNavBar()
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        setupNavBar()
+//    }
 
-    func setupNavBar() {
-        let label = UILabel()
-        label.text = "Готовим"
-        label.textColor = #colorLiteral(red: 0.2784313725, green: 0.2941176471, blue: 0.3607843137, alpha: 1)
-        label.font = UIFont(name: "OpenSans-Bold", size: 34)
-        self.tabBarController?.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
-        self.tabBarController?.navigationItem.hidesBackButton = true
-    }
+//    func setupNavBar() {
+//        let label = UILabel()
+//        label.text = "Готовим"
+//        label.textColor = #colorLiteral(red: 0.2784313725, green: 0.2941176471, blue: 0.3607843137, alpha: 1)
+//        label.font = UIFont(name: "OpenSans-Bold", size: 34)
+//        navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
+//        self.tabBarController?.navigationItem.hidesBackButton = true
+//        self.tabBarController?.navigationController?.navigationBar.prefersLargeTitles = true
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +51,7 @@ class MainRecipesVC: UIViewController {
         tableView.delegate = self
         tableView.register(UINib(nibName: "EmbeddedTableViewCell", bundle: nil), forCellReuseIdentifier: "EmbeddedTableViewCell")
         tableView.register(UINib(nibName: "PlainTableViewCell", bundle: nil), forCellReuseIdentifier: "PlainTableViewCell")
+//        setupNavBar()
 
     }
 }
@@ -74,7 +76,9 @@ extension MainRecipesVC: UICollectionViewDelegate, UICollectionViewDataSource {
         return CGSize(width: 180, height: 238)
     }
 
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: Segues.ToRecipes, sender: indexPath)
+    }
 }
 
 // Mark: - TableView Datasourse & Delegate
@@ -134,5 +138,34 @@ extension MainRecipesVC: UITableViewDataSource, UITableViewDelegate {
         return 238
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: Segues.ToSubCategories, sender: indexPath)
+    }
+
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        var offset = scrollView.contentOffset.y / 150
+//        if offset > -0.5 {
+//            UIView.animate(withDuration: 0.2, animations: {
+//                offset = 1
+//                let color = UIColor.init(red: 1, green: 1, blue: 1, alpha: offset)
+//                let navigationColor = UIColor.init(hue: 0, saturation: offset, brightness: 1, alpha: 1)
+//                self.tabBarController?.navigationController?.navigationBar.tintColor = navigationColor
+//                self.tabBarController?.navigationController?.navigationBar.backgroundColor = color
+//                UIApplication.shared.statusBarView?.backgroundColor = color
+//                self.tabBarController?.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: navigationColor]
+//                self.tabBarController?.navigationController?.navigationBar.barStyle = .default
+//            })
+//        }
+//        else {
+//            UIView.animate(withDuration: 0.2, animations: {
+//                let color = UIColor.init(red: 1, green: 1, blue: 2, alpha: offset)
+//                self.tabBarController?.navigationController?.navigationBar.tintColor = UIColor.white
+//                self.tabBarController?.navigationController?.navigationBar.backgroundColor = color
+//                UIApplication.shared.statusBarView?.backgroundColor = color
+//                self.tabBarController?.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+//                self.tabBarController?.navigationController?.navigationBar.barStyle = .black
+//            })
+//        }
+//    }
 }
 
