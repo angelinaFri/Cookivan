@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		32FD59215F7C391786E279B6 /* Pods_Cookivan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FA32DC4E11F46B33468EB9 /* Pods_Cookivan.framework */; };
-		38094A5B0415B1972BA55390 /* Pods_CookivanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1616E46CDBC02C295E469C7 /* Pods_CookivanUITests.framework */; };
 		5817625122DDC13400425AD9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817625022DDC13400425AD9 /* User.swift */; };
 		5817625322DDC62900425AD9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817625222DDC62900425AD9 /* Extensions.swift */; };
 		5856371322E081260034EBF1 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5856371122E081260034EBF1 /* ForgotPasswordVC.swift */; };
@@ -25,10 +24,10 @@
 		58CF756722DC8CC000729617 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58CF756622DC8CC000729617 /* OpenSans-Regular.ttf */; };
 		58CF756C22DCA19300729617 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF756B22DCA19300729617 /* RoundedViews.swift */; };
 		58CF757122DCC6F700729617 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CF757022DCC6F700729617 /* Constants.swift */; };
-		BD42FF25B890F5E2C5D9AA2A /* Pods_CookivanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 623D1646618774E521C2E0D8 /* Pods_CookivanTests.framework */; };
 		CCC4918502BD659964556EC6 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC49D7180B0BF1DE7378118 /* Storage.swift */; };
 		CCC49408EB9311A96BCBE178 /* FireBaseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC49118A6CA6AE2DDC5DA81 /* FireBaseStorage.swift */; };
 		CCC49520C0E4B0866377446A /* UIViewController+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC492C46AC2B2BD120E17B5 /* UIViewController+Auth.swift */; };
+		D2B91CFC69B349622F3D8E95 /* Pods_CookivanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E325D7ED9C286D6275C820 /* Pods_CookivanTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3DF7ACEF5E4F4BABEC23C5DE /* Pods-CookivanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookivanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookivanUITests/Pods-CookivanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		10209FA126F03C0DFBA54852 /* Pods-CookivanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookivanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookivanTests/Pods-CookivanTests.release.xcconfig"; sourceTree = "<group>"; };
 		4AF2B2CAD49453F6D5568EF2 /* Pods-Cookivan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cookivan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cookivan/Pods-Cookivan.release.xcconfig"; sourceTree = "<group>"; };
+		52885A1957F0ED9E2DDB10C7 /* Pods-CookivanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookivanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookivanTests/Pods-CookivanTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5817625022DDC13400425AD9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5817625222DDC62900425AD9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5856371122E081260034EBF1 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
@@ -74,16 +74,12 @@
 		58CF756822DC8CD000729617 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		58CF756B22DCA19300729617 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		58CF757022DCC6F700729617 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		5ADEEE16A48CE6636160E159 /* Pods-CookivanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookivanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookivanTests/Pods-CookivanTests.release.xcconfig"; sourceTree = "<group>"; };
-		623D1646618774E521C2E0D8 /* Pods_CookivanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookivanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E325D7ED9C286D6275C820 /* Pods_CookivanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookivanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A904FF7F43AE016EF6B5E3DC /* Pods-Cookivan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cookivan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cookivan/Pods-Cookivan.debug.xcconfig"; sourceTree = "<group>"; };
 		A9FA32DC4E11F46B33468EB9 /* Pods_Cookivan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cookivan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD2B47C286B3287C3D9E9C13 /* Pods-CookivanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookivanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookivanUITests/Pods-CookivanUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CCC49118A6CA6AE2DDC5DA81 /* FireBaseStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBaseStorage.swift; sourceTree = "<group>"; };
 		CCC492C46AC2B2BD120E17B5 /* UIViewController+Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Auth.swift"; sourceTree = "<group>"; };
 		CCC49D7180B0BF1DE7378118 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		F1383F012B0EE7D24F5650A9 /* Pods-CookivanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookivanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookivanTests/Pods-CookivanTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F1616E46CDBC02C295E469C7 /* Pods_CookivanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookivanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD42FF25B890F5E2C5D9AA2A /* Pods_CookivanTests.framework in Frameworks */,
+				D2B91CFC69B349622F3D8E95 /* Pods_CookivanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38094A5B0415B1972BA55390 /* Pods_CookivanUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				A9FA32DC4E11F46B33468EB9 /* Pods_Cookivan.framework */,
-				623D1646618774E521C2E0D8 /* Pods_CookivanTests.framework */,
-				F1616E46CDBC02C295E469C7 /* Pods_CookivanUITests.framework */,
+				80E325D7ED9C286D6275C820 /* Pods_CookivanTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -267,10 +261,8 @@
 			children = (
 				A904FF7F43AE016EF6B5E3DC /* Pods-Cookivan.debug.xcconfig */,
 				4AF2B2CAD49453F6D5568EF2 /* Pods-Cookivan.release.xcconfig */,
-				F1383F012B0EE7D24F5650A9 /* Pods-CookivanTests.debug.xcconfig */,
-				5ADEEE16A48CE6636160E159 /* Pods-CookivanTests.release.xcconfig */,
-				3DF7ACEF5E4F4BABEC23C5DE /* Pods-CookivanUITests.debug.xcconfig */,
-				AD2B47C286B3287C3D9E9C13 /* Pods-CookivanUITests.release.xcconfig */,
+				52885A1957F0ED9E2DDB10C7 /* Pods-CookivanTests.debug.xcconfig */,
+				10209FA126F03C0DFBA54852 /* Pods-CookivanTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -301,7 +293,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 587A508022DB14620010781F /* Build configuration list for PBXNativeTarget "CookivanTests" */;
 			buildPhases = (
-				448B42BD0BD9262C228D14FE /* [CP] Check Pods Manifest.lock */,
+				BB0EB89138EFA8A059B648D5 /* [CP] Check Pods Manifest.lock */,
 				587A506522DB14620010781F /* Sources */,
 				587A506622DB14620010781F /* Frameworks */,
 				587A506722DB14620010781F /* Resources */,
@@ -320,7 +312,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 587A508322DB14620010781F /* Build configuration list for PBXNativeTarget "CookivanUITests" */;
 			buildPhases = (
-				3D014C90BFF70DE3E42AA572 /* [CP] Check Pods Manifest.lock */,
 				587A507022DB14620010781F /* Sources */,
 				587A507122DB14620010781F /* Frameworks */,
 				587A507222DB14620010781F /* Resources */,
@@ -409,74 +400,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3D014C90BFF70DE3E42AA572 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CookivanUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		448B42BD0BD9262C228D14FE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CookivanTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		573E7C1C2DBECE39B983AEF1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Cookivan/Pods-Cookivan-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cookivan/Pods-Cookivan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cookivan/Pods-Cookivan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cookivan/Pods-Cookivan-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cookivan/Pods-Cookivan-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AC5DF88E85EA0EE920FFF6B0 /* [CP] Check Pods Manifest.lock */ = {
@@ -491,6 +429,28 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Cookivan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB0EB89138EFA8A059B648D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CookivanTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -693,7 +653,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QKHU8FT2PB;
 				INFOPLIST_FILE = Cookivan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -713,7 +673,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QKHU8FT2PB;
 				INFOPLIST_FILE = Cookivan/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -727,7 +687,7 @@
 		};
 		587A508122DB14620010781F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1383F012B0EE7D24F5650A9 /* Pods-CookivanTests.debug.xcconfig */;
+			baseConfigurationReference = 52885A1957F0ED9E2DDB10C7 /* Pods-CookivanTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -749,7 +709,7 @@
 		};
 		587A508222DB14620010781F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5ADEEE16A48CE6636160E159 /* Pods-CookivanTests.release.xcconfig */;
+			baseConfigurationReference = 10209FA126F03C0DFBA54852 /* Pods-CookivanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -771,7 +731,6 @@
 		};
 		587A508422DB14620010781F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DF7ACEF5E4F4BABEC23C5DE /* Pods-CookivanUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -792,7 +751,6 @@
 		};
 		587A508522DB14620010781F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD2B47C286B3287C3D9E9C13 /* Pods-CookivanUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
