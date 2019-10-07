@@ -119,7 +119,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - BoringSSL-GRPC
     - Firebase
     - FirebaseAnalytics
@@ -159,6 +159,6 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1097ca58584c8d9be81bfbf2c5ff5975648dd87a
 
-PODFILE CHECKSUM: 427d29e91ffebb441ebf3a0109e3f557e76b4627
+PODFILE CHECKSUM: e86f63fb39beb4a67c2bd12f7af89e4ea1fe8513
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.3
