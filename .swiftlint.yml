@@ -1,2 +1,5 @@
 excluded:
 - Pods
+identifier_name:
+    excluded: # excluded via string array
+        - id
