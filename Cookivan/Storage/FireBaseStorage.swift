@@ -47,10 +47,10 @@ class FireBaseStorage {
             if let error = error {
                 print("firestore error handling")
                 completion(.failure(error))
-            } else if let u = result?.user {
+            } else if let user = result?.user {
                 //  TODO: imp email and load username from firestore data
-                if let email = u.email {
-                    let user = User(id: u.uid, email: email, username: "")
+                if let email = user.email {
+                    let user = User(id: user.uid, email: email, username: "")
                     print("user")
                     completion(.success(user))
                 } else {
