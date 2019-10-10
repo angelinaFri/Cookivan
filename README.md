@@ -1,6 +1,8 @@
 # Cookivan iOS Application
 This application is created as a mobile version of [Cookivan](https://cookivan.com)
 
+Design by [IvanFriz](https://www.behance.net/friziivan51c5)
+
 <img src="Screenshots/login1.png" width="200"> <img src="Screenshots/mainScreen.png" width="200">
 
 
