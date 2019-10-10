@@ -23,7 +23,7 @@ List of CocoaPods dependencies used in the project:
 1. Download the repository
 `$ git clone https://github.com/angelinaFri/Cookivan`
 2. Open the project in Xcode
-`$ open CatFacts.xcworkspace`
+`$ open Cookivan.xcworkspace`
 3. Compile and run the application
 
 ## Requirements
