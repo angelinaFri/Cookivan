@@ -51,14 +51,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="39" translatesAutoresizingMaskIntoConstraints="NO" id="tFD-RG-c46">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="375" id="ffb-mc-TR3"/>
+                                </constraints>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qi9-wf-OsI">
+                                <rect key="frame" x="0.0" y="375" width="414" height="438"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Gyx-96-cZt" firstAttribute="trailing" secondItem="tFD-RG-c46" secondAttribute="trailing" id="3cj-GE-R6S"/>
                             <constraint firstItem="tFD-RG-c46" firstAttribute="leading" secondItem="Gyx-96-cZt" secondAttribute="leading" id="Asd-A1-D8o"/>
                             <constraint firstItem="tFD-RG-c46" firstAttribute="top" secondItem="2Jn-8u-Yjz" secondAttribute="top" id="LXQ-Sk-5cQ"/>
+                            <constraint firstItem="Qi9-wf-OsI" firstAttribute="top" secondItem="tFD-RG-c46" secondAttribute="bottom" id="LuA-Qx-hdW"/>
+                            <constraint firstItem="Gyx-96-cZt" firstAttribute="trailing" secondItem="Qi9-wf-OsI" secondAttribute="trailing" id="eb1-YC-2Z2"/>
+                            <constraint firstItem="Qi9-wf-OsI" firstAttribute="leading" secondItem="Gyx-96-cZt" secondAttribute="leading" id="hNh-yt-M9R"/>
+                            <constraint firstItem="Gyx-96-cZt" firstAttribute="bottom" secondItem="Qi9-wf-OsI" secondAttribute="bottom" id="v58-Ex-fhA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gyx-96-cZt"/>
                     </view>
@@ -90,7 +101,7 @@
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="MyM-Pv-IRO">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="97.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="35"/>
