@@ -1,8 +1,6 @@
 # Cookivan iOS Application
 This application is created as a mobile version of [Cookivan](https://cookivan.com)
 
-![Login](https://drive.google.com/file/d/1pXHJmOH70QfvzLopBFkzE7jIrUT_Q2fZ/view?usp=sharing)
-
 ### Current features of V1.0:
 1. User registration and authorization with input data validation [Firebase](https://firebase.google.com).
 2. Ability to log in as a quest without required registration.
