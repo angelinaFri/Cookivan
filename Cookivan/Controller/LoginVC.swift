@@ -24,10 +24,10 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func forgotPassClicked(_ sender: Any) {
-        let vc = ForgotPasswordVC()
-        vc.modalTransitionStyle = .crossDissolve
-        vc.modalPresentationStyle = .overCurrentContext
-        present(vc, animated: true, completion: nil)
+        let viewController = ForgotPasswordVC()
+        viewController.modalTransitionStyle = .crossDissolve
+        viewController.modalPresentationStyle = .overCurrentContext
+        present(viewController, animated: true, completion: nil)
     }
 
     @IBAction func loginClicked(_ sender: Any) {
@@ -36,8 +36,10 @@ class LoginVC: UIViewController {
 
     @IBAction func guestClicked(_ sender: Any) {
 //        dismiss(animated: true, completion: nil)
-        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarControllerSID") as? MainRecipesVC {
-        present(vc, animated: true, completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "TabBarControllerSID")
+        if viewController is MainRecipesVC {
+            present(viewController, animated: true, completion: nil)
         }
     }
 
@@ -75,4 +77,3 @@ class LoginVC: UIViewController {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
     }
 }
-

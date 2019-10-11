@@ -12,7 +12,8 @@ class MainRecipesVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
-    let sectionTitles = ["Новинки недели", "Рецепты", "Для мультиварки", "Кухни мира", "Здоровое питание", "Кулинарные новости", "Советы", "Диеты"]
+    let sectionTitles = ["Новинки недели", "Рецепты", "Для мультиварки", "Кухни мира",
+                         "Здоровое питание", "Кулинарные новости", "Советы", "Диеты"]
 
     let plainTableViewCellData: [[UIImage]] = [[#imageLiteral(resourceName: "37")], [#imageLiteral(resourceName: "1")], [#imageLiteral(resourceName: "26")]]
 
@@ -49,8 +50,11 @@ class MainRecipesVC: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.register(UINib(nibName: "EmbeddedTableViewCell", bundle: nil), forCellReuseIdentifier: "EmbeddedTableViewCell")
-        tableView.register(UINib(nibName: "PlainTableViewCell", bundle: nil), forCellReuseIdentifier: "PlainTableViewCell")
+        let embeddedTableViewCellNib = UINib(nibName: "EmbeddedTableViewCell", bundle: nil)
+        tableView.register(embeddedTableViewCellNib, forCellReuseIdentifier: "EmbeddedTableViewCell")
+
+        let plainTableViewCellNib = UINib(nibName: "PlainTableViewCell", bundle: nil)
+        tableView.register(plainTableViewCellNib, forCellReuseIdentifier: "PlainTableViewCell")
 //        setupNavBar()
 
     }
@@ -63,16 +67,21 @@ extension MainRecipesVC: UICollectionViewDelegate, UICollectionViewDataSource {
         return collectionViewCellData.count
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewID", for: indexPath) as! RecipesCollectionViewCell
-        
-        cell.recipesCollectionViewCellImg.image = collectionViewCellData[indexPath.section][indexPath.row]
-        return cell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewID", for: indexPath)
 
+        guard let recipesCell = cell as? RecipesCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+
+        recipesCell.recipesCollectionViewCellImg.image = collectionViewCellData[indexPath.section][indexPath.row]
+        return recipesCell
     }
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 180, height: 238)
     }
 
@@ -81,7 +90,7 @@ extension MainRecipesVC: UICollectionViewDelegate, UICollectionViewDataSource {
     }
 }
 
-// Mark: - TableView Datasourse & Delegate
+// MARK: - TableView Datasourse & Delegate
 
 extension MainRecipesVC: UITableViewDataSource, UITableViewDelegate {
 
@@ -93,7 +102,7 @@ extension MainRecipesVC: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView()
-        view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0) 
+        view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         let label = UILabel()
         label.text = sectionTitles[section]
         label.font = UIFont(name: "OpenSans-SemiBold", size: 17)
@@ -122,11 +131,18 @@ extension MainRecipesVC: UITableViewDataSource, UITableViewDelegate {
 
         switch indexPathForCellType {
         case 0, 4...7:
-            let cellEmbedded = tableView.dequeueReusableCell(withIdentifier: "EmbeddedTableViewCell", for: indexPath) as! EmbeddedTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "EmbeddedTableViewCell", for: indexPath)
+            guard let cellEmbedded = cell as? EmbeddedTableViewCell else {
+                return UITableViewCell()
+            }
             return cellEmbedded
 
         case 1...3:
-            let cellPlain = tableView.dequeueReusableCell(withIdentifier: "PlainTableViewCell", for: indexPath) as! PlainTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PlainTableViewCell", for: indexPath)
+            guard let cellPlain = cell as? PlainTableViewCell else {
+                return UITableViewCell()
+            }
+
             cellPlain.plainTableViewImg.image = plainTableViewCellData[indexPath.section - 1][indexPath.row]
             return cellPlain
         default:
@@ -152,7 +168,8 @@ extension MainRecipesVC: UITableViewDataSource, UITableViewDelegate {
 //                self.tabBarController?.navigationController?.navigationBar.tintColor = navigationColor
 //                self.tabBarController?.navigationController?.navigationBar.backgroundColor = color
 //                UIApplication.shared.statusBarView?.backgroundColor = color
-//                self.tabBarController?.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: navigationColor]
+//                self.tabBarController?.navigationController?.navigationBar.titleTextAttributes =
+//    [NSAttributedString.Key.foregroundColor: navigationColor]
 //                self.tabBarController?.navigationController?.navigationBar.barStyle = .default
 //            })
 //        }
@@ -162,10 +179,10 @@ extension MainRecipesVC: UITableViewDataSource, UITableViewDelegate {
 //                self.tabBarController?.navigationController?.navigationBar.tintColor = UIColor.white
 //                self.tabBarController?.navigationController?.navigationBar.backgroundColor = color
 //                UIApplication.shared.statusBarView?.backgroundColor = color
-//                self.tabBarController?.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+//                self.tabBarController?.navigationController?.navigationBar.titleTextAttributes =
+//    [NSAttributedString.Key.foregroundColor: UIColor.black]
 //                self.tabBarController?.navigationController?.navigationBar.barStyle = .black
 //            })
 //        }
 //    }
 }
-

@@ -9,7 +9,8 @@ import FirebaseAuth
 extension UIViewController {
     func handleFireAuthError(error: Error) {
         if let errorCode = AuthErrorCode(rawValue: error._code) {
-            let alert = UIAlertController(title: "Упс...Ошибка.\n \(errorCode.errorMessage)", message:"", preferredStyle: .alert)
+            let alertTitle = "Упс...Ошибка.\n \(errorCode.errorMessage)"
+            let alert = UIAlertController(title: alertTitle, message: "", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "ОК", style: .default, handler: nil)
             alert.addAction(okAction)
             self.present(alert, animated: true, completion: nil)

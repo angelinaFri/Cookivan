@@ -19,7 +19,6 @@ class ForgotPasswordVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
     @IBAction func cancelClicked(_ sender: Any) {
         dismiss(animated: true, completion: nil)
         print("vc dissmissed")

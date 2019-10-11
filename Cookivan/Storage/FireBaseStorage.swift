@@ -7,9 +7,9 @@ import Foundation
 import FirebaseAuth
 import Firebase
 
-//  TODO:- implement in future protocol Storage
+//  TODO: - implement in future protocol Storage
 class FireBaseStorage {
-    func createOrLinkUser(username: String, email: String, password: String, closure: @escaping (Error?) -> ()) {
+    func createOrLinkUser(username: String, email: String, password: String, closure: @escaping (Error?) -> Void) {
         let checkAndCreateFirestoreUser: AuthDataResultCallback = { (result, error) in
             if let error = error {
                 closure(error)
@@ -24,13 +24,13 @@ class FireBaseStorage {
         }
         if let authUser = Auth.auth().currentUser {
             let credential = EmailAuthProvider.credential(withEmail: email, password: password)
-            authUser.link(with: credential, completion:  checkAndCreateFirestoreUser)
+            authUser.link(with: credential, completion: checkAndCreateFirestoreUser)
         } else {
             Auth.auth().createUser(withEmail: email, password: password, completion: checkAndCreateFirestoreUser)
         }
     }
 
-    func createFirebaseUser(user: User, closure: @escaping (Error?) -> ()) {
+    func createFirebaseUser(user: User, closure: @escaping (Error?) -> Void) {
         let newUserRef = Firestore.firestore().collection("users").document(user.id)
         let data = user.toData()
         newUserRef.setData(data) { (error) in
@@ -41,8 +41,8 @@ class FireBaseStorage {
         }
     }
 
-    //    TODO:- refactor to Result<>
-    open func signIn(withEmail email: String, password: String, completion: @escaping (Result<User, Error>) -> ()) {
+    //    TODO: - refactor to Result<>
+    open func signIn(withEmail email: String, password: String, completion: @escaping (Result<User, Error>) -> Void) {
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             if let error = error {
                 print("firestore error handling")
