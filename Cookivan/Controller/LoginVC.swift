@@ -19,7 +19,7 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationView()
-
+        setupTextFields()
         // Do any additional setup after loading the view.
     }
 
@@ -75,4 +75,25 @@ class LoginVC: UIViewController {
     func setupNavigationView() {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
     }
+}
+
+// MARK: - Private methods
+
+extension LoginVC {
+
+    private func setupTextFields() {
+        let placeholderAttributes = [NSAttributedString.Key.foregroundColor: UIColor.gray]
+        let emailTextFieldPlaceholderString =
+            NSLocalizedString("email", comment: "Placeholder text for email field on login screen")
+        let emailTextFieldPlaceholder =
+            NSAttributedString(string: emailTextFieldPlaceholderString, attributes: placeholderAttributes)
+        self.emailTxtField.attributedPlaceholder = emailTextFieldPlaceholder
+
+        let passwordTextFieldPlaceholderString =
+            NSLocalizedString("password", comment: "Placeholder text for password field on login screen")
+        let passwordTextFieldPlaceholder =
+            NSAttributedString(string: passwordTextFieldPlaceholderString, attributes: placeholderAttributes)
+        self.passwordTxtField.attributedPlaceholder = passwordTextFieldPlaceholder
+    }
+
 }
