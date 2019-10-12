@@ -26,7 +26,7 @@ class RegistrationVC: UIViewController {
         super.viewDidLoad()
         backBarButtonItemSetup()
         checkItemSwitch()
-
+        setupTextFields()
     }
 
     func checkItemSwitch() {
@@ -104,4 +104,39 @@ class RegistrationVC: UIViewController {
 //            self.activityIndicator.stopAnimating()
 //        }
 //    }
+}
+
+// MARK: - Private methods
+
+extension RegistrationVC {
+
+    private func setupTextFields() {
+        let placeholderAttributes = [NSAttributedString.Key.foregroundColor: UIColor.gray]
+        let usernameTextFieldPlaceholderString =
+            NSLocalizedString("username", comment: "Placeholder text for username field on registration screen")
+        let usernameTextFieldPlaceholder =
+            NSAttributedString(string: usernameTextFieldPlaceholderString, attributes: placeholderAttributes)
+        self.usernameTxt.attributedPlaceholder = usernameTextFieldPlaceholder
+
+        let emailTextFieldPlaceholderString =
+            NSLocalizedString("email", comment: "Placeholder text for email field on registration screen")
+        let emailTextFieldPlaceholder =
+            NSAttributedString(string: emailTextFieldPlaceholderString, attributes: placeholderAttributes)
+        self.emailTxt.attributedPlaceholder = emailTextFieldPlaceholder
+
+        let passwordTextFieldPlaceholderString =
+            NSLocalizedString("password", comment: "Placeholder text for password field on registration screen")
+        let passwordTextFieldPlaceholder =
+            NSAttributedString(string: passwordTextFieldPlaceholderString, attributes: placeholderAttributes)
+        self.passwordTxt.attributedPlaceholder = passwordTextFieldPlaceholder
+
+        let confirmPassTextFieldPlaceholderString =
+            NSLocalizedString("confirm password",
+                              comment: "Placeholder text for confirm pass field on registration screen")
+        let confirmPasswordTextFieldPlaceholder =
+            NSAttributedString(string: confirmPassTextFieldPlaceholderString, attributes: placeholderAttributes)
+        self.confirmPassTxt.attributedPlaceholder = confirmPasswordTextFieldPlaceholder
+
+    }
+
 }
