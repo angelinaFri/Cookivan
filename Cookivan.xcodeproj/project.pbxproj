@@ -31,7 +31,7 @@
 		5856371322E081260034EBF1 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5856371122E081260034EBF1 /* ForgotPasswordVC.swift */; };
 		5856371422E081260034EBF1 /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5856371222E081260034EBF1 /* ForgotPasswordVC.xib */; };
 		587A505922DB14610010781F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587A505822DB14610010781F /* AppDelegate.swift */; };
-		587A505B22DB14610010781F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587A505A22DB14610010781F /* LoginVC.swift */; };
+		587A505B22DB14610010781F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587A505A22DB14610010781F /* LoginViewController.swift */; };
 		587A505E22DB14610010781F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 587A505C22DB14610010781F /* Main.storyboard */; };
 		587A506022DB14620010781F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587A505F22DB14620010781F /* Assets.xcassets */; };
 		587A506322DB14620010781F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 587A506122DB14620010781F /* LaunchScreen.storyboard */; };
@@ -94,7 +94,7 @@
 		5856371222E081260034EBF1 /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
 		587A505522DB14600010781F /* Cookivan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookivan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		587A505822DB14610010781F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		587A505A22DB14610010781F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		587A505A22DB14610010781F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		587A505D22DB14610010781F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		587A505F22DB14620010781F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		587A506222DB14620010781F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -251,7 +251,7 @@
 		587A508822DB14AD0010781F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				587A505A22DB14610010781F /* LoginVC.swift */,
+				587A505A22DB14610010781F /* LoginViewController.swift */,
 				58CF756422DC79A600729617 /* RegistrationVC.swift */,
 				5856371122E081260034EBF1 /* ForgotPasswordVC.swift */,
 				584FFD5A22EECEF400A7CB0F /* MainRecipesVC.swift */,
@@ -565,7 +565,7 @@
 				58CF756C22DCA19300729617 /* RoundedViews.swift in Sources */,
 				584FFD7A22F035AF00A7CB0F /* PlainTableViewCell.swift in Sources */,
 				581E2FDA2301B1A20065EDAB /* SubCategoryVC.swift in Sources */,
-				587A505B22DB14610010781F /* LoginVC.swift in Sources */,
+				587A505B22DB14610010781F /* LoginViewController.swift in Sources */,
 				58176BF22309C66200F2D7C0 /* TestVC.swift in Sources */,
 				584FFD7722EF21F000A7CB0F /* MainRecipesVC.swift in Sources */,
 				09BFAF0D235134910034FB1D /* RecipesCollectionViewCell.swift in Sources */,

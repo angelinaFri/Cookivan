@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  Cookivan
 //
 //  Created by Angelina on 7/14/19.
@@ -10,31 +10,30 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class LoginVC: UIViewController {
+class LoginViewController: UIViewController {
 
-    @IBOutlet weak var emailTxtField: RoundedTextField!
-    @IBOutlet weak var passwordTxtField: RoundedTextField!
+    @IBOutlet weak var emailTextField: RoundedTextField!
+    @IBOutlet weak var passwordTextField: RoundedTextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationView()
         setupTextFields()
-        // Do any additional setup after loading the view.
     }
 
-    @IBAction func forgotPassClicked(_ sender: Any) {
+    @IBAction func forgotPassClicked(_ sender: UIButton) {
         let viewController = ForgotPasswordVC()
         viewController.modalTransitionStyle = .crossDissolve
         viewController.modalPresentationStyle = .overCurrentContext
         present(viewController, animated: true, completion: nil)
     }
 
-    @IBAction func loginClicked(_ sender: Any) {
+    @IBAction func loginClicked(_ sender: UIButton) {
         userSignin()
     }
 
-    @IBAction func guestClicked(_ sender: Any) {
+    @IBAction func guestClicked(_ sender: UIButton) {
 //        dismiss(animated: true, completion: nil)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "TabBarControllerSID")
@@ -44,8 +43,8 @@ class LoginVC: UIViewController {
     }
 
     func userSignin() {
-        guard let email = emailTxtField.text, email.isNotEmpty,
-              let password = passwordTxtField.text, password.isNotEmpty else {
+        guard let email = self.emailTextField.text, email.isNotEmpty,
+              let password = self.passwordTextField.text, password.isNotEmpty else {
             simpleAlert(title: "Пожалуйста, заполните все поля.", msg: "")
             return
         }
@@ -58,7 +57,7 @@ class LoginVC: UIViewController {
 //            }
 //            self.dismiss(animated: true, completion: nil)
 //        }
-        activityIndicator.startAnimating()
+        self.activityIndicator.startAnimating()
         FireBaseStorage().signIn(withEmail: email, password: password) { result in
             self.activityIndicator.stopAnimating()
             do {
@@ -79,7 +78,7 @@ class LoginVC: UIViewController {
 
 // MARK: - Private methods
 
-extension LoginVC {
+extension LoginViewController {
 
     private func setupTextFields() {
         let placeholderAttributes = [NSAttributedString.Key.foregroundColor: UIColor.gray]
@@ -87,13 +86,13 @@ extension LoginVC {
             NSLocalizedString("email", comment: "Placeholder text for email field on login screen")
         let emailTextFieldPlaceholder =
             NSAttributedString(string: emailTextFieldPlaceholderString, attributes: placeholderAttributes)
-        self.emailTxtField.attributedPlaceholder = emailTextFieldPlaceholder
+        self.emailTextField.attributedPlaceholder = emailTextFieldPlaceholder
 
         let passwordTextFieldPlaceholderString =
             NSLocalizedString("password", comment: "Placeholder text for password field on login screen")
         let passwordTextFieldPlaceholder =
             NSAttributedString(string: passwordTextFieldPlaceholderString, attributes: placeholderAttributes)
-        self.passwordTxtField.attributedPlaceholder = passwordTextFieldPlaceholder
+        self.passwordTextField.attributedPlaceholder = passwordTextFieldPlaceholder
     }
 
 }
