@@ -1,4 +1,6 @@
 # Cookivan iOS Application
+<img alt="Bitrise" src="https://img.shields.io/bitrise/e46d52f9fafe7c8b?token=OXkiEFD2dU7dWotd_AsKiA"> <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/angelinaFri/Cookivan"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/angelinaFri/Cookivan"> <img src="https://img.shields.io/badge/min%20iOS%20version-12.2-green">
+
 This application is created as a mobile version of [Cookivan](https://cookivan.com)
 
 Design by [IvanFriz](https://www.behance.net/friziivan51c5)
@@ -22,11 +24,13 @@ List of CocoaPods dependencies used in the project:
 ## Usage
 1. Download the repository
 `$ git clone https://github.com/angelinaFri/Cookivan`
-2. Open the project in Xcode
+2. Install dependencies
+ $ pod install
+3. Open the project in Xcode
 `$ open Cookivan.xcworkspace`
-3. Compile and run the application
+4. Compile and run the application
 
 ## Requirements
 * Xcode 10.1
-* iOS 12.0
+* iOS 12.2
   
