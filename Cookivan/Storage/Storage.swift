@@ -7,5 +7,5 @@ import Foundation
 import FirebaseFirestore
 
 protocol Storage {
-    func createUser(withEmail: String, withPassword: String, closure: (Error?) -> ())
+    func createUser(withEmail: String, withPassword: String, closure: (Error?) -> Void)
 }

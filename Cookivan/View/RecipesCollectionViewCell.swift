@@ -22,7 +22,6 @@ class RecipesCollectionViewCell: UICollectionViewCell {
 
 }
 
-
 //recipesCollectionViewCellImg.layer.cornerRadius = 10
 //recipeTitleLbl.shadowColor = UIColor.clear
 //self.layer.cornerRadius = 10

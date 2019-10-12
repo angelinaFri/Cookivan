@@ -53,5 +53,3 @@ class RoundedShadowView: UIView {
         layer.shadowRadius = 3
     }
 }
-
-

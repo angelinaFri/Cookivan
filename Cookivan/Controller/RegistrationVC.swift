@@ -67,9 +67,8 @@ class RegistrationVC: UIViewController {
         // TODO: Move arrow from left side
     }
 
-
     @IBAction func registerClicked(_ sender: Any) {
-        // MARK:- All fields are filled out validation
+        // MARK: - All fields are filled out validation
         guard let email = emailTxt.text, email.isNotEmpty,
               let username = usernameTxt.text, username.isNotEmpty,
               let password = passwordTxt.text, password.isNotEmpty else {
@@ -77,13 +76,13 @@ class RegistrationVC: UIViewController {
             return
         }
 
-        // MARK:- Password matching validation
+        // MARK: - Password matching validation
         guard let confirmPass = confirmPassTxt.text, confirmPass == password else {
             simpleAlert(title: "Пароли не совпадают", msg: "")
             return
         }
         activityIndicator.startAnimating()
-        // MARK:- Manually creating user and link it with anonymous one /that was logged in already
+        // MARK: - Manually creating user and link it with anonymous one /that was logged in already
         self.storage.createOrLinkUser(username: username, email: email, password: password) { [weak self] error in
             self?.activityIndicator.stopAnimating()
             if let error = error {

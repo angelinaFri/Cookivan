@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-
 struct AppColors {
     static let Grey = #colorLiteral(red: 0.8823529412, green: 0.8980392157, blue: 0.9137254902, alpha: 1)
     static let GreyTxtFieldBorder = #colorLiteral(red: 0.7058823529, green: 0.7058823529, blue: 0.7647058824, alpha: 1)

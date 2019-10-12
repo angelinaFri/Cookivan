@@ -22,8 +22,4 @@ class RecipeVC: UIViewController {
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
     }
-    
-
-
-
 }
