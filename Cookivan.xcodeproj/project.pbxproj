@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		098FD8222353383900FC24ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 098FD8242353383900FC24ED /* Localizable.strings */; };
 		09BFAF0D235134910034FB1D /* RecipesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BFAF0C235134910034FB1D /* RecipesCollectionViewCell.swift */; };
 		32FD59215F7C391786E279B6 /* Pods_Cookivan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FA32DC4E11F46B33468EB9 /* Pods_Cookivan.framework */; };
 		58135D6F234EF2AD002759B6 /* mainScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 58135D6D234EF2AD002759B6 /* mainScreen.png */; };
@@ -68,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		098FD8232353383900FC24ED /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		09BFAF0C235134910034FB1D /* RecipesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesCollectionViewCell.swift; sourceTree = "<group>"; };
 		10209FA126F03C0DFBA54852 /* Pods-CookivanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookivanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookivanTests/Pods-CookivanTests.release.xcconfig"; sourceTree = "<group>"; };
 		4AF2B2CAD49453F6D5568EF2 /* Pods-Cookivan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cookivan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cookivan/Pods-Cookivan.release.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				587A508922DB1F410010781F /* GoogleService-Info.plist */,
 				CCC49C4A01F84726C3EE8448 /* Storage */,
 				CCC4971A4E202576D77605D8 /* Helper */,
+				098FD8242353383900FC24ED /* Localizable.strings */,
 			);
 			path = Cookivan;
 			sourceTree = "<group>";
@@ -418,10 +421,10 @@
 			};
 			buildConfigurationList = 587A505022DB14600010781F /* Build configuration list for PBXProject "Cookivan" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				ru,
 				Base,
 			);
 			mainGroup = 587A504C22DB14600010781F;
@@ -457,6 +460,7 @@
 				58135D70234EF2AD002759B6 /* login1.png in Resources */,
 				5821602622F83D2400E72D64 /* Profile.storyboard in Resources */,
 				58CAC78A22F3467600466205 /* OpenSans-Bold.ttf in Resources */,
+				098FD8222353383900FC24ED /* Localizable.strings in Resources */,
 				587A505E22DB14610010781F /* Main.storyboard in Resources */,
 				5821602222F83CD500E72D64 /* Favorites.storyboard in Resources */,
 			);
@@ -616,6 +620,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		098FD8242353383900FC24ED /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				098FD8232353383900FC24ED /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		587A505C22DB14610010781F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
