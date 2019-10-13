@@ -72,7 +72,6 @@ class LoginVC: UIViewController {
         }
     }
 
-    // TODO:- check how to change status bar color
     func setupNavigationView() {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
     }
