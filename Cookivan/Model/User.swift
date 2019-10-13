@@ -22,7 +22,6 @@ struct User {
         self.username = username
     }
 
-    // TODO:- Recheck when I need this initializer
     init(data: [String: Any]) {
         id = data["id"] as? String ?? ""
         email = data["email"] as? String ?? ""

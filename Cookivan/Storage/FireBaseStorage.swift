@@ -7,7 +7,6 @@ import Foundation
 import FirebaseAuth
 import Firebase
 
-//  TODO: - implement in future protocol Storage
 class FireBaseStorage {
     func createOrLinkUser(username: String, email: String, password: String, closure: @escaping (Error?) -> Void) {
         let checkAndCreateFirestoreUser: AuthDataResultCallback = { (result, error) in
@@ -41,20 +40,17 @@ class FireBaseStorage {
         }
     }
 
-    //    TODO: - refactor to Result<>
     open func signIn(withEmail email: String, password: String, completion: @escaping (Result<User, Error>) -> Void) {
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             if let error = error {
                 print("firestore error handling")
                 completion(.failure(error))
             } else if let user = result?.user {
-                //  TODO: imp email and load username from firestore data
                 if let email = user.email {
                     let user = User(id: user.uid, email: email, username: "")
                     print("user")
                     completion(.success(user))
                 } else {
-////                    TODO: implement error like "impossible non email situation" - done
                     completion(.failure(NSError(domain: "impossible error", code: 0, userInfo: nil)))
                 }
             }

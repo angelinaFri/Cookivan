@@ -64,7 +64,6 @@ class RegistrationVC: UIViewController {
         navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "left_arrow")
         navigationController?.navigationBar.tintColor = AppColors.Grey
         navigationController?.navigationBar.topItem?.title = ""
-        // TODO: Move arrow from left side
     }
 
     @IBAction func registerClicked(_ sender: Any) {
@@ -89,7 +88,6 @@ class RegistrationVC: UIViewController {
                 debugPrint(error)
                 self?.handleFireAuthError(error: error)
             }
-//             TODO: implement some logic
         }
     }
 
