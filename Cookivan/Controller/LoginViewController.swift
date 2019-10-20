@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationView()
+
         setupTextFields()
     }
 
@@ -71,9 +71,6 @@ class LoginViewController: UIViewController {
         }
     }
 
-    func setupNavigationView() {
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-    }
 }
 
 // MARK: - Private methods

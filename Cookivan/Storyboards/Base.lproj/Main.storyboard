@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBgImg" translatesAutoresizingMaskIntoConstraints="NO" id="1Rt-Eh-V5R">
-                                <rect key="frame" x="0.0" y="84" width="414" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BWn-AR-SGd">
                                 <rect key="frame" x="52" y="251" width="310" height="106"/>
@@ -66,7 +66,7 @@
                                 <rect key="frame" x="31" y="106" width="331" height="119"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DFu-1m-dXY">
-                                <rect key="frame" x="52" y="474" width="310" height="164"/>
+                                <rect key="frame" x="52" y="472" width="310" height="164"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsB-Gm-FiJ" customClass="RoundedButton" customModule="Cookivan" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="310" height="48"/>
@@ -121,13 +121,13 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Зарегистрируйтесь, чтобы иметь доступ ко всем рецептам и функциям!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOG-CB-VCz">
-                                <rect key="frame" x="66" y="785.5" width="282" height="35.5"/>
+                                <rect key="frame" x="66" y="790.5" width="282" height="30.5"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLm-DX-gkW">
-                                <rect key="frame" x="163" y="372" width="88" height="27"/>
+                                <rect key="frame" x="164" y="372" width="86" height="25"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="11"/>
                                 <state key="normal" title="Забыли пароль?">
                                     <color key="titleColor" red="0.80392156862745101" green="0.81176470588235294" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
@@ -154,6 +154,7 @@
                             <constraint firstAttribute="bottom" secondItem="1Rt-Eh-V5R" secondAttribute="bottom" id="Yj4-Ik-uhy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BWn-AR-SGd" secondAttribute="trailing" constant="52" id="Yvl-gs-anF"/>
                             <constraint firstAttribute="bottom" secondItem="cOG-CB-VCz" secondAttribute="bottom" constant="75" id="fnb-yo-BTT"/>
+                            <constraint firstItem="1Rt-Eh-V5R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="g0i-hP-GgV"/>
                             <constraint firstItem="c2b-Cv-EQJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="259.5" id="hc8-JX-6ZR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NMX-up-zox" secondAttribute="trailing" constant="52" id="iFz-DQ-qyq"/>
                             <constraint firstItem="dLm-DX-gkW" firstAttribute="centerX" secondItem="sw6-Ai-kgI" secondAttribute="centerX" id="lQL-Kq-akb"/>
@@ -165,7 +166,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="H3g-gE-3Jh"/>
                     <connections>
                         <outlet property="activityIndicator" destination="c2b-Cv-EQJ" id="jTU-hg-fsN"/>
                         <outlet property="emailTextField" destination="Cqv-L8-hho" id="aBx-n6-LKS"/>
@@ -188,7 +188,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3sh-Te-xgb">
-                                <rect key="frame" x="52" y="251" width="310" height="222"/>
+                                <rect key="frame" x="52" y="370" width="310" height="222"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nPx-xS-bzf" customClass="RoundedTextField" customModule="Cookivan" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="310" height="48"/>
@@ -253,16 +253,16 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="k0D-3Q-G7e">
-                                <rect key="frame" x="31" y="106" width="331" height="119"/>
+                                <rect key="frame" x="31" y="106" width="331" height="238"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Зарегистрируйтесь, чтобы иметь доступ ко всем рецептам и функциям!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3v-xd-lc3">
-                                <rect key="frame" x="66" y="731.5" width="282" height="35.5"/>
+                                <rect key="frame" x="66" y="736.5" width="282" height="30.5"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfV-l4-yVp" customClass="RoundedButton" customModule="Cookivan" customModuleProvider="target">
-                                <rect key="frame" x="52" y="525" width="310" height="48"/>
+                                <rect key="frame" x="52" y="644" width="310" height="48"/>
                                 <color key="backgroundColor" red="0.95294117649999999" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="ErH-ay-OX9"/>
@@ -281,14 +281,14 @@
                                 <color key="color" red="0.95294117647058818" green="0.35686274509803922" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doneRed" translatesAutoresizingMaskIntoConstraints="NO" id="qdo-D8-YKb">
-                                <rect key="frame" x="330" y="384.5" width="17" height="13"/>
+                                <rect key="frame" x="330" y="503.5" width="17" height="13"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="16.800000000000001" id="N8E-1a-GV0"/>
                                     <constraint firstAttribute="height" constant="12.6" id="uLL-hX-eKC"/>
                                 </constraints>
                             </imageView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doneRed" translatesAutoresizingMaskIntoConstraints="NO" id="kVi-HI-MhR">
-                                <rect key="frame" x="330" y="442.5" width="17" height="13"/>
+                                <rect key="frame" x="330" y="561.5" width="17" height="13"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="16.800000000000001" id="4hI-Mj-9k9"/>
                                     <constraint firstAttribute="height" constant="12.6" id="p30-7C-hQs"/>
