@@ -70,3 +70,6 @@ fastlane/test_output
 Cookivan/.DS_Store
 
 .DS_Store
+
+# Idea's workspace files
+.idea/
