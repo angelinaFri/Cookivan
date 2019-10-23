@@ -1,5 +1,5 @@
 # Cookivan iOS Application
-<img alt="Bitrise" src="https://img.shields.io/bitrise/e46d52f9fafe7c8b?token=OXkiEFD2dU7dWotd_AsKiA"> <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/angelinaFri/Cookivan"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/angelinaFri/Cookivan"> <img src="https://img.shields.io/badge/min%20iOS%20version-12.2-green">
+<img alt="Bitrise" src="https://img.shields.io/bitrise/cc6ac6237221271e?token=go-dx1AcqGyLxwcHMmskIw"> <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/angelinaFri/Cookivan"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/angelinaFri/Cookivan"> <img src="https://img.shields.io/badge/min%20iOS%20version-12.2-green">
 
 This application is created as a mobile version of [Cookivan](https://cookivan.com)
 
