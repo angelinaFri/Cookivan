@@ -143,7 +143,7 @@ extension MainRecipesVC: UITableViewDataSource, UITableViewDelegate {
                 return UITableViewCell()
             }
 
-            cellPlain.plainTableViewImg.image = plainTableViewCellData[indexPath.section - 1][indexPath.row]
+            cellPlain.cellImage.image = plainTableViewCellData[indexPath.section - 1][indexPath.row]
             return cellPlain
         default:
             return UITableViewCell()
