@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,22 +19,21 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYV-1B-9eF">
                         <rect key="frame" x="16" y="0.0" width="315" height="193"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="12" translatesAutoresizingMaskIntoConstraints="NO" id="Lfz-YG-pH7" customClass="RoundedImageViewWithShadow" customModule="Cookivan" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="315" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12" translatesAutoresizingMaskIntoConstraints="NO" id="Lfz-YG-pH7" customClass="RoundedImageViewWithShadow" customModule="Cookivan" customModuleProvider="target">
-                        <rect key="frame" x="16" y="0.0" width="315" height="193"/>
-                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="OYV-1B-9eF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="1QT-WU-0p5"/>
-                    <constraint firstAttribute="trailing" secondItem="Lfz-YG-pH7" secondAttribute="trailing" constant="16" id="6Rk-xA-B71"/>
                     <constraint firstItem="OYV-1B-9eF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HUx-af-BGr"/>
-                    <constraint firstAttribute="bottom" secondItem="Lfz-YG-pH7" secondAttribute="bottom" constant="8" id="Tjn-XL-OxM"/>
                     <constraint firstAttribute="trailing" secondItem="OYV-1B-9eF" secondAttribute="trailing" constant="16" id="VUn-Xe-eCV"/>
                     <constraint firstAttribute="bottom" secondItem="OYV-1B-9eF" secondAttribute="bottom" constant="8" id="jf2-Dt-pEt"/>
-                    <constraint firstItem="Lfz-YG-pH7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="qkr-xG-MFE"/>
-                    <constraint firstItem="Lfz-YG-pH7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xYu-XQ-8wn"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
