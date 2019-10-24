@@ -38,7 +38,7 @@
 		587A506022DB14620010781F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587A505F22DB14620010781F /* Assets.xcassets */; };
 		587A506322DB14620010781F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 587A506122DB14620010781F /* LaunchScreen.storyboard */; };
 		587A506E22DB14620010781F /* CookivanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587A506D22DB14620010781F /* CookivanTests.swift */; };
-		587A507922DB14620010781F /* CookivanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587A507822DB14620010781F /* CookivanUITests.swift */; };
+		587A507922DB14620010781F /* LoginScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587A507822DB14620010781F /* LoginScreenTests.swift */; };
 		587A508A22DB1F410010781F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 587A508922DB1F410010781F /* GoogleService-Info.plist */; };
 		58CAC78A22F3467600466205 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58CAC78922F3467600466205 /* OpenSans-Bold.ttf */; };
 		58CAC78B22F3470A00466205 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58CF756822DC8CD000729617 /* OpenSans-SemiBold.ttf */; };
@@ -107,7 +107,7 @@
 		587A506D22DB14620010781F /* CookivanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookivanTests.swift; sourceTree = "<group>"; };
 		587A506F22DB14620010781F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		587A507422DB14620010781F /* CookivanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookivanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		587A507822DB14620010781F /* CookivanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookivanUITests.swift; sourceTree = "<group>"; };
+		587A507822DB14620010781F /* LoginScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenTests.swift; sourceTree = "<group>"; };
 		587A507A22DB14620010781F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		587A508922DB1F410010781F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		58CAC78922F3467600466205 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -228,7 +228,7 @@
 		587A507722DB14620010781F /* CookivanUITests */ = {
 			isa = PBXGroup;
 			children = (
-				587A507822DB14620010781F /* CookivanUITests.swift */,
+				587A507822DB14620010781F /* LoginScreenTests.swift */,
 				587A507A22DB14620010781F /* Info.plist */,
 			);
 			path = CookivanUITests;
@@ -604,7 +604,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				587A507922DB14620010781F /* CookivanUITests.swift in Sources */,
+				587A507922DB14620010781F /* LoginScreenTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -787,7 +787,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -809,7 +809,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
